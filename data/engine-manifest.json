@@ -1,0 +1,23 @@
+{
+  "releaseBaseUrl": "https://github.com/Amadeus-ddc/xiangqi-coach/releases/download/v0.1.0",
+  "platform": "darwin",
+  "arch": "arm64",
+  "engine": "Pikafish dev-20260213-391d491a",
+  "sourceRepository": "https://github.com/official-pikafish/Pikafish",
+  "sourceCommit": "391d491a49b27ca276d50f993ae837a58b1a0354",
+  "license": "GPL-3.0",
+  "assets": [
+    {
+      "name": "pikafish",
+      "releaseAsset": "pikafish-macos-arm64",
+      "sha256": "79ed74e46bd2277c3f0cbbe63b3faea70ee85a6f9736f0141ec0185801325b1b",
+      "bytes": 778504
+    },
+    {
+      "name": "pikafish.nnue",
+      "releaseAsset": "pikafish.nnue",
+      "sha256": "e6ec544cc330b83346cd47091fa027225ff963d04017d8cd88fc0c82f7c267e4",
+      "bytes": 53719310
+    }
+  ]
+}

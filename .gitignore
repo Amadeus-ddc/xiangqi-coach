@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.runtime/
+.DS_Store
+.env
+.env.*
+*.sqlite
+*.sqlite-*
+http-token
+*.part
+*.tar.gz
+*.tgz
+# Shipped engine assets are published as checksummed release downloads.
+*.nnue

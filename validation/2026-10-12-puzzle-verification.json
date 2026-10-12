@@ -1,0 +1,1158 @@
+{
+  "catalogVersion": "2026-10-12.1",
+  "catalogSha256": "7710c68cd56f540efb0e9c19f537cb45d1a29eab459a5e56a47a4f6312a65c3a",
+  "puzzles": 18,
+  "solutionPaths": 81,
+  "playerMoveBudgets": {
+    "1": 7,
+    "2": 9,
+    "3": 2
+  },
+  "blackToMove": 4,
+  "themes": [
+    "兵卒",
+    "双炮",
+    "双车",
+    "炮兵",
+    "车兵",
+    "车炮",
+    "车马",
+    "马兵",
+    "马炮",
+    "马炮兵"
+  ],
+  "authorship": "Original sparse positions constructed and selected locally, no third-party dataset or text.",
+  "search": "Exhaustive finite horizon OR/AND search over every legal move. All winning player continuations and all opponent replies retained; winner includes checkmate and stalemate. One smaller move budget independently rejected for every multi-turn position.",
+  "engineCrosscheck": "Pikafish dev-20260213-391d491a; one thread, 32 MB hash, 300 ms per root; MultiPV set to every legal first move; all winning-first-move sets and all minimum winning move budgets agree.",
+  "tests": "node --test plugins/xiangqi-coach/test/puzzles.test.mjs: 4 passed, 0 failed, 5.86 seconds.",
+  "coverageLimitation": "Complete for legal forced wins within each stated 1-3 player-move budget under the bundled rule set. Longer wins are deliberately outside the exercise target. No claim of exhaustive game-history reachability beyond static legality.",
+  "searchEvidence": [
+    {
+      "id": "rook-ladder",
+      "fen": "3k1a3/R5R2/9/8p/9/9/9/9/9/5K3 r",
+      "depth": 1,
+      "solutions": [
+        [
+          "a8a9"
+        ]
+      ],
+      "nodes": 42
+    },
+    {
+      "id": "rook-knight-net",
+      "fen": "4k4/9/2NR1a3/9/9/9/9/9/9/3K5 r",
+      "depth": 1,
+      "solutions": [
+        [
+          "d7d9"
+        ],
+        [
+          "d7f7"
+        ]
+      ],
+      "nodes": 33
+    },
+    {
+      "id": "stacked-cannons",
+      "fen": "3k5/9/3C5/8C/9/9/9/9/9/4K4 r",
+      "depth": 1,
+      "solutions": [
+        [
+          "i6d6"
+        ]
+      ],
+      "nodes": 60
+    },
+    {
+      "id": "cannon-pawn-screen",
+      "fen": "2P1k4/9/C8/3Np4/9/9/9/9/9/4K4 r",
+      "depth": 1,
+      "solutions": [
+        [
+          "a7a9"
+        ]
+      ],
+      "nodes": 38
+    },
+    {
+      "id": "paired-pawns",
+      "fen": "2P1k4/3P5/9/8p/9/9/9/9/9/5K3 r",
+      "depth": 1,
+      "solutions": [
+        [
+          "c9d9"
+        ]
+      ],
+      "nodes": 9
+    },
+    {
+      "id": "black-cannon-rank",
+      "fen": "5k3/9/9/9/9/9/8c/9/4A4/4Kc3 b",
+      "depth": 1,
+      "solutions": [
+        [
+          "i3i0"
+        ]
+      ],
+      "nodes": 53
+    },
+    {
+      "id": "black-rook-cross",
+      "fen": "3k5/9/9/9/9/2r6/3r5/9/4K4/3A5 b",
+      "depth": 2,
+      "solutions": [
+        [
+          "c4c1",
+          "e1e0",
+          "d3d0"
+        ],
+        [
+          "c4c1",
+          "e1e2",
+          "d3d2"
+        ],
+        [
+          "c4e4",
+          "e1f1",
+          "d3f3"
+        ],
+        [
+          "d3e3",
+          "e1f1",
+          "c4f4"
+        ]
+      ],
+      "nodes": 1299
+    },
+    {
+      "id": "rook-quiet-block",
+      "fen": "R8/4k4/9/R3p4/9/9/9/9/9/3K5 r",
+      "depth": 2,
+      "solutions": [
+        [
+          "a6e6",
+          "e8f8",
+          "e6e7"
+        ],
+        [
+          "a9f9",
+          "e6e5",
+          "a6e6"
+        ],
+        [
+          "a9f9",
+          "e8e7",
+          "a6e6"
+        ]
+      ],
+      "nodes": 909
+    },
+    {
+      "id": "rook-force-advisor",
+      "fen": "4ka3/9/9/R5R2/9/9/9/9/9/3K5 r",
+      "depth": 2,
+      "solutions": [
+        [
+          "a6e6",
+          "f9e8",
+          "g6f6"
+        ],
+        [
+          "a6e6",
+          "f9e8",
+          "g6g9"
+        ],
+        [
+          "g6e6",
+          "f9e8",
+          "a6a9"
+        ],
+        [
+          "g6f6",
+          "e9e8",
+          "a6e6"
+        ],
+        [
+          "g6f6",
+          "f9e8",
+          "a6e6"
+        ]
+      ],
+      "nodes": 1144
+    },
+    {
+      "id": "knight-check-fork",
+      "fen": "4kaN2/9/4b4/6p2/8R/9/9/9/9/4K4 r",
+      "depth": 2,
+      "solutions": [
+        [
+          "g9f7",
+          "e9d9",
+          "i5d5"
+        ],
+        [
+          "g9f7",
+          "e9e8",
+          "i5i8"
+        ]
+      ],
+      "nodes": 593
+    },
+    {
+      "id": "rook-cannon-screen",
+      "fen": "3k1a3/1PR6/C8/p8/9/9/9/9/9/4K4 r",
+      "depth": 2,
+      "solutions": [
+        [
+          "a7a8",
+          "a6a5",
+          "c8c9"
+        ],
+        [
+          "a7a8",
+          "a6a5",
+          "c8d8"
+        ],
+        [
+          "a7a8",
+          "f9e8",
+          "c8c9"
+        ],
+        [
+          "a7a9",
+          "a6a5",
+          "b8b9"
+        ],
+        [
+          "a7a9",
+          "f9e8",
+          "b8b9"
+        ],
+        [
+          "b8b9",
+          "a6a5",
+          "a7a9"
+        ],
+        [
+          "b8b9",
+          "a6a5",
+          "b9c9"
+        ],
+        [
+          "b8b9",
+          "f9e8",
+          "a7a9"
+        ]
+      ],
+      "nodes": 1448
+    },
+    {
+      "id": "cannons-pawn-lock",
+      "fen": "3ak4/5P3/9/7C1/6C2/9/9/9/9/3K5 r",
+      "depth": 1,
+      "solutions": [
+        [
+          "g5e5"
+        ],
+        [
+          "h6e6"
+        ]
+      ],
+      "nodes": 48
+    },
+    {
+      "id": "knight-cannon-choice",
+      "fen": "3k1N3/9/9/4P4/3C5/9/9/9/9/3K5 r",
+      "depth": 2,
+      "solutions": [
+        [
+          "e6d6",
+          "d9e9",
+          "f9g7"
+        ],
+        [
+          "f9g7",
+          "d9d8",
+          "e6d6"
+        ],
+        [
+          "f9g7",
+          "d9e9",
+          "d5a5"
+        ],
+        [
+          "f9g7",
+          "d9e9",
+          "d5b5"
+        ],
+        [
+          "f9g7",
+          "d9e9",
+          "d5c5"
+        ],
+        [
+          "f9g7",
+          "d9e9",
+          "d5d9"
+        ],
+        [
+          "f9g7",
+          "d9e9",
+          "d5e5"
+        ],
+        [
+          "f9g7",
+          "d9e9",
+          "d5f5"
+        ],
+        [
+          "f9g7",
+          "d9e9",
+          "d5g5"
+        ],
+        [
+          "f9g7",
+          "d9e9",
+          "d5h5"
+        ],
+        [
+          "f9g7",
+          "d9e9",
+          "d5i5"
+        ],
+        [
+          "f9g7",
+          "d9e9",
+          "e6d6"
+        ]
+      ],
+      "nodes": 439
+    },
+    {
+      "id": "pawn-before-rook",
+      "fen": "4k4/9/6P2/1R7/9/9/9/9/9/3K5 r",
+      "depth": 2,
+      "solutions": [
+        [
+          "b6b8",
+          "e9f9",
+          "b8e8"
+        ],
+        [
+          "b6b8",
+          "e9f9",
+          "d0e0"
+        ],
+        [
+          "b6b9",
+          "e9e8",
+          "g7f7"
+        ],
+        [
+          "b6e6",
+          "e9f9",
+          "e6e8"
+        ],
+        [
+          "b6e6",
+          "e9f9",
+          "g7f7"
+        ],
+        [
+          "b6e6",
+          "e9f9",
+          "g7g8"
+        ],
+        [
+          "g7f7",
+          "e9e8",
+          "b6b9"
+        ],
+        [
+          "g7f7",
+          "e9e8",
+          "b6e6"
+        ],
+        [
+          "g7f7",
+          "e9f9",
+          "b6b9"
+        ],
+        [
+          "g7f7",
+          "e9f9",
+          "b6e6"
+        ],
+        [
+          "g7f7",
+          "e9f9",
+          "d0e0"
+        ],
+        [
+          "g7g8",
+          "e9e8",
+          "b6e6"
+        ],
+        [
+          "g7g8",
+          "e9f9",
+          "b6b9"
+        ],
+        [
+          "g7g8",
+          "e9f9",
+          "b6e6"
+        ],
+        [
+          "g7g8",
+          "e9f9",
+          "d0e0"
+        ]
+      ],
+      "nodes": 625
+    },
+    {
+      "id": "black-knight-pawn",
+      "fen": "5k3/9/9/9/9/9/P8/B1np5/9/4KA3 b",
+      "depth": 2,
+      "solutions": [
+        [
+          "d2d1",
+          "a2c0",
+          "d1d0"
+        ],
+        [
+          "d2d1",
+          "a2c4",
+          "d1d0"
+        ],
+        [
+          "d2d1",
+          "a3a4",
+          "d1d0"
+        ],
+        [
+          "d2d1",
+          "f0e1",
+          "d1e1"
+        ]
+      ],
+      "nodes": 195
+    },
+    {
+      "id": "knight-cannon-discovery",
+      "fen": "1C1k5/9/9/9/2N6/9/9/9/9/5K3 r",
+      "depth": 2,
+      "solutions": [
+        [
+          "c5b7",
+          "d9e9",
+          "b7c9"
+        ],
+        [
+          "c5e6",
+          "d9e9",
+          "e6c7"
+        ]
+      ],
+      "nodes": 582
+    },
+    {
+      "id": "knight-route",
+      "fen": "3k5/4P4/9/8p/6bN1/9/9/9/9/4K4 r",
+      "depth": 3,
+      "solutions": [
+        [
+          "h5g7",
+          "g5e7",
+          "g7e6",
+          "e7c5",
+          "e6c7"
+        ],
+        [
+          "h5g7",
+          "g5e7",
+          "g7e6",
+          "e7c9",
+          "e6c7"
+        ],
+        [
+          "h5g7",
+          "g5e7",
+          "g7e6",
+          "e7g5",
+          "e6c7"
+        ],
+        [
+          "h5g7",
+          "g5e7",
+          "g7e6",
+          "e7g9",
+          "e6c7"
+        ],
+        [
+          "h5g7",
+          "g5e7",
+          "g7e6",
+          "i6i5",
+          "e6c7"
+        ],
+        [
+          "h5g7",
+          "g5i7",
+          "g7e6",
+          "i6i5",
+          "e6c7"
+        ],
+        [
+          "h5g7",
+          "g5i7",
+          "g7e6",
+          "i7g5",
+          "e6c7"
+        ],
+        [
+          "h5g7",
+          "g5i7",
+          "g7e6",
+          "i7g9",
+          "e6c7"
+        ],
+        [
+          "h5g7",
+          "g5i7",
+          "g7f9",
+          "i6i5",
+          "e8d8"
+        ],
+        [
+          "h5g7",
+          "g5i7",
+          "g7f9",
+          "i7g5",
+          "e8d8"
+        ],
+        [
+          "h5g7",
+          "g5i7",
+          "g7f9",
+          "i7g9",
+          "e8d8"
+        ],
+        [
+          "h5g7",
+          "i6i5",
+          "g7e6",
+          "g5e7",
+          "e6c7"
+        ],
+        [
+          "h5g7",
+          "i6i5",
+          "g7e6",
+          "g5i7",
+          "e6c7"
+        ],
+        [
+          "h5g7",
+          "i6i5",
+          "g7e6",
+          "i5i4",
+          "e6c7"
+        ]
+      ],
+      "nodes": 1420
+    },
+    {
+      "id": "black-pawns-chain",
+      "fen": "5k3/9/9/9/9/9/8P/3p1pp2/4K4/5AB2 b",
+      "depth": 3,
+      "solutions": [
+        [
+          "f2f1",
+          "e1e0",
+          "d2d1",
+          "f0e1",
+          "f1e1"
+        ],
+        [
+          "f2f1",
+          "e1e0",
+          "d2d1",
+          "g0i2",
+          "f1f0"
+        ],
+        [
+          "f2f1",
+          "e1e0",
+          "d2d1",
+          "i3i4",
+          "f1f0"
+        ]
+      ],
+      "nodes": 624
+    }
+  ],
+  "engineEvidence": [
+    {
+      "id": "rook-ladder",
+      "exactFirsts": [
+        "a8a9"
+      ],
+      "engineFirsts": [
+        "a8a9"
+      ],
+      "allFirstsAgree": true,
+      "engineLineCount": 32,
+      "fen": "3k1a3/R5R2/9/8p/9/9/9/9/9/5K3 r",
+      "engine": "Pikafish dev-20260213-391d491a",
+      "score": {
+        "type": "mate",
+        "value": 1,
+        "bound": "exact",
+        "perspective": "side_to_move"
+      },
+      "bestmove": "a8a9",
+      "pv": [
+        "a8a9"
+      ],
+      "depth": 245,
+      "bestCovered": true,
+      "solutions": 1,
+      "requestedMs": 300,
+      "elapsedMs": 174
+    },
+    {
+      "id": "rook-knight-net",
+      "exactFirsts": [
+        "d7d9",
+        "d7f7"
+      ],
+      "engineFirsts": [
+        "d7d9",
+        "d7f7"
+      ],
+      "allFirstsAgree": true,
+      "engineLineCount": 17,
+      "fen": "4k4/9/2NR1a3/9/9/9/9/9/9/3K5 r",
+      "engine": "Pikafish dev-20260213-391d491a",
+      "score": {
+        "type": "mate",
+        "value": 1,
+        "bound": "exact",
+        "perspective": "side_to_move"
+      },
+      "bestmove": "d7f7",
+      "pv": [
+        "d7f7"
+      ],
+      "depth": 245,
+      "bestCovered": true,
+      "solutions": 2,
+      "requestedMs": 300,
+      "elapsedMs": 49
+    },
+    {
+      "id": "stacked-cannons",
+      "exactFirsts": [
+        "i6d6"
+      ],
+      "engineFirsts": [
+        "i6d6"
+      ],
+      "allFirstsAgree": true,
+      "engineLineCount": 36,
+      "fen": "3k5/9/3C5/8C/9/9/9/9/9/4K4 r",
+      "engine": "Pikafish dev-20260213-391d491a",
+      "score": {
+        "type": "mate",
+        "value": 1,
+        "bound": "exact",
+        "perspective": "side_to_move"
+      },
+      "bestmove": "i6d6",
+      "pv": [
+        "i6d6"
+      ],
+      "depth": 53,
+      "bestCovered": true,
+      "solutions": 1,
+      "requestedMs": 300,
+      "elapsedMs": 300
+    },
+    {
+      "id": "cannon-pawn-screen",
+      "exactFirsts": [
+        "a7a9"
+      ],
+      "engineFirsts": [
+        "a7a9"
+      ],
+      "allFirstsAgree": true,
+      "engineLineCount": 28,
+      "fen": "2P1k4/9/C8/3Np4/9/9/9/9/9/4K4 r",
+      "engine": "Pikafish dev-20260213-391d491a",
+      "score": {
+        "type": "mate",
+        "value": 1,
+        "bound": "exact",
+        "perspective": "side_to_move"
+      },
+      "bestmove": "a7a9",
+      "pv": [
+        "a7a9"
+      ],
+      "depth": 27,
+      "bestCovered": true,
+      "solutions": 1,
+      "requestedMs": 300,
+      "elapsedMs": 300
+    },
+    {
+      "id": "paired-pawns",
+      "exactFirsts": [
+        "c9d9"
+      ],
+      "engineFirsts": [
+        "c9d9"
+      ],
+      "allFirstsAgree": true,
+      "engineLineCount": 6,
+      "fen": "2P1k4/3P5/9/8p/9/9/9/9/9/5K3 r",
+      "engine": "Pikafish dev-20260213-391d491a",
+      "score": {
+        "type": "mate",
+        "value": 1,
+        "bound": "exact",
+        "perspective": "side_to_move"
+      },
+      "bestmove": "c9d9",
+      "pv": [
+        "c9d9"
+      ],
+      "depth": 40,
+      "bestCovered": true,
+      "solutions": 1,
+      "requestedMs": 300,
+      "elapsedMs": 300
+    },
+    {
+      "id": "black-cannon-rank",
+      "exactFirsts": [
+        "i3i0"
+      ],
+      "engineFirsts": [
+        "i3i0"
+      ],
+      "allFirstsAgree": true,
+      "engineLineCount": 30,
+      "fen": "5k3/9/9/9/9/9/8c/9/4A4/4Kc3 b",
+      "engine": "Pikafish dev-20260213-391d491a",
+      "score": {
+        "type": "mate",
+        "value": 1,
+        "bound": "exact",
+        "perspective": "side_to_move"
+      },
+      "bestmove": "i3i0",
+      "pv": [
+        "i3i0"
+      ],
+      "depth": 15,
+      "bestCovered": true,
+      "solutions": 1,
+      "requestedMs": 300,
+      "elapsedMs": 300
+    },
+    {
+      "id": "black-rook-cross",
+      "exactFirsts": [
+        "c4c1",
+        "c4e4",
+        "d3e3"
+      ],
+      "engineFirsts": [
+        "c4c1",
+        "c4e4",
+        "d3e3"
+      ],
+      "allFirstsAgree": true,
+      "engineLineCount": 34,
+      "fen": "3k5/9/9/9/9/2r6/3r5/9/4K4/3A5 b",
+      "engine": "Pikafish dev-20260213-391d491a",
+      "score": {
+        "type": "mate",
+        "value": 2,
+        "bound": "exact",
+        "perspective": "side_to_move"
+      },
+      "bestmove": "d3e3",
+      "pv": [
+        "d3e3",
+        "e1f1",
+        "c4f4"
+      ],
+      "depth": 245,
+      "bestCovered": true,
+      "solutions": 4,
+      "requestedMs": 300,
+      "elapsedMs": 133
+    },
+    {
+      "id": "rook-quiet-block",
+      "exactFirsts": [
+        "a6e6",
+        "a9f9"
+      ],
+      "engineFirsts": [
+        "a6e6",
+        "a9f9"
+      ],
+      "allFirstsAgree": true,
+      "engineLineCount": 24,
+      "fen": "R8/4k4/9/R3p4/9/9/9/9/9/3K5 r",
+      "engine": "Pikafish dev-20260213-391d491a",
+      "score": {
+        "type": "mate",
+        "value": 2,
+        "bound": "exact",
+        "perspective": "side_to_move"
+      },
+      "bestmove": "a9f9",
+      "pv": [
+        "a9f9",
+        "e6e5",
+        "a6e6"
+      ],
+      "depth": 245,
+      "bestCovered": true,
+      "solutions": 3,
+      "requestedMs": 300,
+      "elapsedMs": 219
+    },
+    {
+      "id": "rook-force-advisor",
+      "exactFirsts": [
+        "a6e6",
+        "g6e6",
+        "g6f6"
+      ],
+      "engineFirsts": [
+        "a6e6",
+        "g6e6",
+        "g6f6"
+      ],
+      "allFirstsAgree": true,
+      "engineLineCount": 31,
+      "fen": "4ka3/9/9/R5R2/9/9/9/9/9/3K5 r",
+      "engine": "Pikafish dev-20260213-391d491a",
+      "score": {
+        "type": "mate",
+        "value": 2,
+        "bound": "exact",
+        "perspective": "side_to_move"
+      },
+      "bestmove": "a6e6",
+      "pv": [
+        "a6e6",
+        "f9e8",
+        "g6g9"
+      ],
+      "depth": 245,
+      "bestCovered": true,
+      "solutions": 5,
+      "requestedMs": 300,
+      "elapsedMs": 85
+    },
+    {
+      "id": "knight-check-fork",
+      "exactFirsts": [
+        "g9f7"
+      ],
+      "engineFirsts": [
+        "g9f7"
+      ],
+      "allFirstsAgree": true,
+      "engineLineCount": 23,
+      "fen": "4kaN2/9/4b4/6p2/8R/9/9/9/9/4K4 r",
+      "engine": "Pikafish dev-20260213-391d491a",
+      "score": {
+        "type": "mate",
+        "value": 2,
+        "bound": "exact",
+        "perspective": "side_to_move"
+      },
+      "bestmove": "g9f7",
+      "pv": [
+        "g9f7",
+        "e9e8",
+        "i5i8"
+      ],
+      "depth": 23,
+      "bestCovered": true,
+      "solutions": 2,
+      "requestedMs": 300,
+      "elapsedMs": 301
+    },
+    {
+      "id": "rook-cannon-screen",
+      "exactFirsts": [
+        "a7a8",
+        "a7a9",
+        "b8b9"
+      ],
+      "engineFirsts": [
+        "a7a8",
+        "a7a9",
+        "b8b9"
+      ],
+      "allFirstsAgree": true,
+      "engineLineCount": 29,
+      "fen": "3k1a3/1PR6/C8/p8/9/9/9/9/9/4K4 r",
+      "engine": "Pikafish dev-20260213-391d491a",
+      "score": {
+        "type": "mate",
+        "value": 2,
+        "bound": "exact",
+        "perspective": "side_to_move"
+      },
+      "bestmove": "b8b9",
+      "pv": [
+        "b8b9",
+        "f9e8",
+        "a7a9"
+      ],
+      "depth": 45,
+      "bestCovered": true,
+      "solutions": 8,
+      "requestedMs": 300,
+      "elapsedMs": 299
+    },
+    {
+      "id": "cannons-pawn-lock",
+      "exactFirsts": [
+        "g5e5",
+        "h6e6"
+      ],
+      "engineFirsts": [
+        "g5e5",
+        "h6e6"
+      ],
+      "allFirstsAgree": true,
+      "engineLineCount": 38,
+      "fen": "3ak4/5P3/9/7C1/6C2/9/9/9/9/3K5 r",
+      "engine": "Pikafish dev-20260213-391d491a",
+      "score": {
+        "type": "mate",
+        "value": 1,
+        "bound": "exact",
+        "perspective": "side_to_move"
+      },
+      "bestmove": "h6e6",
+      "pv": [
+        "h6e6"
+      ],
+      "depth": 36,
+      "bestCovered": true,
+      "solutions": 2,
+      "requestedMs": 300,
+      "elapsedMs": 300
+    },
+    {
+      "id": "knight-cannon-choice",
+      "exactFirsts": [
+        "e6d6",
+        "f9g7"
+      ],
+      "engineFirsts": [
+        "e6d6",
+        "f9g7"
+      ],
+      "allFirstsAgree": true,
+      "engineLineCount": 16,
+      "fen": "3k1N3/9/9/4P4/3C5/9/9/9/9/3K5 r",
+      "engine": "Pikafish dev-20260213-391d491a",
+      "score": {
+        "type": "mate",
+        "value": 2,
+        "bound": "exact",
+        "perspective": "side_to_move"
+      },
+      "bestmove": "e6d6",
+      "pv": [
+        "e6d6",
+        "d9e9",
+        "f9g7"
+      ],
+      "depth": 245,
+      "bestCovered": true,
+      "solutions": 12,
+      "requestedMs": 300,
+      "elapsedMs": 54
+    },
+    {
+      "id": "pawn-before-rook",
+      "exactFirsts": [
+        "b6b8",
+        "b6b9",
+        "b6e6",
+        "g7f7",
+        "g7g8"
+      ],
+      "engineFirsts": [
+        "b6b8",
+        "b6b9",
+        "b6e6",
+        "g7f7",
+        "g7g8"
+      ],
+      "allFirstsAgree": true,
+      "engineLineCount": 21,
+      "fen": "4k4/9/6P2/1R7/9/9/9/9/9/3K5 r",
+      "engine": "Pikafish dev-20260213-391d491a",
+      "score": {
+        "type": "mate",
+        "value": 2,
+        "bound": "exact",
+        "perspective": "side_to_move"
+      },
+      "bestmove": "b6e6",
+      "pv": [
+        "b6e6",
+        "e9f9",
+        "g7f7"
+      ],
+      "depth": 245,
+      "bestCovered": true,
+      "solutions": 15,
+      "requestedMs": 300,
+      "elapsedMs": 36
+    },
+    {
+      "id": "black-knight-pawn",
+      "exactFirsts": [
+        "d2d1"
+      ],
+      "engineFirsts": [
+        "d2d1"
+      ],
+      "allFirstsAgree": true,
+      "engineLineCount": 9,
+      "fen": "5k3/9/9/9/9/9/P8/B1np5/9/4KA3 b",
+      "engine": "Pikafish dev-20260213-391d491a",
+      "score": {
+        "type": "mate",
+        "value": 2,
+        "bound": "exact",
+        "perspective": "side_to_move"
+      },
+      "bestmove": "d2d1",
+      "pv": [
+        "d2d1",
+        "a3a4",
+        "d1d0"
+      ],
+      "depth": 28,
+      "bestCovered": true,
+      "solutions": 4,
+      "requestedMs": 300,
+      "elapsedMs": 300
+    },
+    {
+      "id": "knight-cannon-discovery",
+      "exactFirsts": [
+        "c5b7",
+        "c5e6"
+      ],
+      "engineFirsts": [
+        "c5b7",
+        "c5e6"
+      ],
+      "allFirstsAgree": true,
+      "engineLineCount": 21,
+      "fen": "1C1k5/9/9/9/2N6/9/9/9/9/5K3 r",
+      "engine": "Pikafish dev-20260213-391d491a",
+      "score": {
+        "type": "mate",
+        "value": 2,
+        "bound": "exact",
+        "perspective": "side_to_move"
+      },
+      "bestmove": "c5b7",
+      "pv": [
+        "c5b7",
+        "d9e9",
+        "b7c9"
+      ],
+      "depth": 245,
+      "bestCovered": true,
+      "solutions": 2,
+      "requestedMs": 300,
+      "elapsedMs": 157
+    },
+    {
+      "id": "knight-route",
+      "exactFirsts": [
+        "h5g7"
+      ],
+      "engineFirsts": [
+        "h5g7"
+      ],
+      "allFirstsAgree": true,
+      "engineLineCount": 9,
+      "fen": "3k5/4P4/9/8p/6bN1/9/9/9/9/4K4 r",
+      "engine": "Pikafish dev-20260213-391d491a",
+      "score": {
+        "type": "mate",
+        "value": 3,
+        "bound": "exact",
+        "perspective": "side_to_move"
+      },
+      "bestmove": "h5g7",
+      "pv": [
+        "h5g7",
+        "g5e7",
+        "g7e6",
+        "e7c9",
+        "e6c7"
+      ],
+      "depth": 26,
+      "bestCovered": true,
+      "solutions": 14,
+      "requestedMs": 300,
+      "elapsedMs": 300
+    },
+    {
+      "id": "black-pawns-chain",
+      "exactFirsts": [
+        "f2f1"
+      ],
+      "engineFirsts": [
+        "f2f1"
+      ],
+      "allFirstsAgree": true,
+      "engineLineCount": 8,
+      "fen": "5k3/9/9/9/9/9/8P/3p1pp2/4K4/5AB2 b",
+      "engine": "Pikafish dev-20260213-391d491a",
+      "score": {
+        "type": "mate",
+        "value": 3,
+        "bound": "exact",
+        "perspective": "side_to_move"
+      },
+      "bestmove": "f2f1",
+      "pv": [
+        "f2f1",
+        "e1e0",
+        "d2d1",
+        "g0i2",
+        "f1f0"
+      ],
+      "depth": 18,
+      "bestCovered": true,
+      "solutions": 3,
+      "requestedMs": 300,
+      "elapsedMs": 299
+    }
+  ]
+}

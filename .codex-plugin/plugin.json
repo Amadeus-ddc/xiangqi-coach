@@ -1,0 +1,24 @@
+{
+  "name": "xiangqi-coach",
+  "version": "0.1.0",
+  "description": "对话内象棋教练，支持残局训练、错题重练、计时挑战、局势评分、GPT 讲解与逐手复盘。",
+  "author": {
+    "name": "Amadeus",
+    "url": "https://github.com/Amadeus-ddc"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "象棋教练",
+    "shortDescription": "残局训练、计时挑战和整局复盘，直接在聊天棋盘中练习。",
+    "longDescription": "可点击的象棋棋盘，支持人机对弈、自由录谱和摆设局面。93道已验证训练题包含18道原创题及75道CCPD实战改编题，支持来源筛选、学习、本地评测、3/5分钟及不限时挑战，自动保存星级和错题。保留局势曲线、逐手与阶段评分、漏杀标记、失误重练和棋盘内GPT讲解。整局复盘接入已还原的天天象棋客户端分段评分与阶段规则；使用本地引擎，不保证官方同分。训练评级仍采用本地规则。",
+    "developerName": "Amadeus",
+    "category": "Education",
+    "capabilities": [
+      "interactive",
+      "read",
+      "write"
+    ],
+    "defaultPrompt": "用象棋教练和我下一盘，我执红。请显示实时局势曲线，我点讲解时把正文放进棋盘里，下完后做战后复盘。"
+  },
+  "mcpServers": "./.mcp.json"
+}

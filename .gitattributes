@@ -1,0 +1,5 @@
+vendor/** linguist-vendored
+native/core/** linguist-vendored
+test/fixtures/notebook/** linguist-vendored
+server/ccpd-puzzles.json linguist-generated
+validation/*.json linguist-generated

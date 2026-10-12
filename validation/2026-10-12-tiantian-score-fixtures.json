@@ -1,0 +1,1553 @@
+{
+  "schemaVersion": 1,
+  "artifact": "tiantian-xiangqi.apk",
+  "provenance": {
+    "date": "2026-10-12",
+    "authority": "shipped-artifact isolated pure-function execution",
+    "apkSha256": "f1f86c38d3a34e1fe5c7c2d2f8939eb2284c873e3bcfe615e43b3d00a80682c0",
+    "apkBytes": 198465378,
+    "sourceMember": "assets/assets/scripts/index.jsc",
+    "sourceMemberBytes": 2907920,
+    "sourceMemberSha256": "9eadd80722b6a58e18c19b342c44b47f26f98c8be413423fbe709ea6e3290686",
+    "decodedBundleBytes": 11189397,
+    "decodedBundleSha256": "a423474f720218e9febfb558d7c8a95f5b03852032795c7a6b6a9ec2d9501fc7",
+    "sourceMethods": [
+      {
+        "module": "QiPuUtil.ts",
+        "moduleSha256": "9f8b8578d3f0f483f9f148a564eda54bb442c016426d307244a5b00ba1ded6dc",
+        "functionLabel": "alc",
+        "rangeConvention": "UTF-8 bytes, zero-based, end exclusive",
+        "moduleByteStart": 4522,
+        "moduleByteEnd": 4732,
+        "decodedBundleByteStart": 8124714,
+        "decodedBundleByteEnd": 8124924,
+        "excerptSha256": "e03001dee2a566f90d0b0378b4c65caad92de0aba68fc0e88f63d4290b6c84ee",
+        "auditedIdentifiers": [
+          "Math",
+          "abs",
+          "alc",
+          "floor",
+          "let",
+          "r0",
+          "return",
+          "static",
+          "ty",
+          "tz"
+        ]
+      },
+      {
+        "module": "QiPuUtil.ts",
+        "moduleSha256": "9f8b8578d3f0f483f9f148a564eda54bb442c016426d307244a5b00ba1ded6dc",
+        "functionLabel": "JY",
+        "rangeConvention": "UTF-8 bytes, zero-based, end exclusive",
+        "moduleByteStart": 4732,
+        "moduleByteEnd": 5053,
+        "decodedBundleByteStart": 8124924,
+        "decodedBundleByteEnd": 8125245,
+        "excerptSha256": "a14976e419f3751bc04960d7c607d8695c7c8c190b30fe5c1d8b6c450a50b913",
+        "auditedIdentifiers": [
+          "JY",
+          "alc",
+          "if",
+          "r0",
+          "return",
+          "static",
+          "this",
+          "ty",
+          "tz"
+        ]
+      },
+      {
+        "module": "AIUtil.ts",
+        "moduleSha256": "b42172e3f5287361587a3bd9d008d90c5acdd6a33f3ab939b4bc3983a4db7a06",
+        "functionLabel": "oPa",
+        "rangeConvention": "UTF-8 bytes, zero-based, end exclusive",
+        "moduleByteStart": 6540,
+        "moduleByteEnd": 6809,
+        "decodedBundleByteStart": 642271,
+        "decodedBundleByteEnd": 642540,
+        "excerptSha256": "e3b567cf0903071a34559fb03ca2231e079b5cca2e00a9f3011431a380f9fae2",
+        "auditedIdentifiers": [
+          "Math",
+          "oPa",
+          "pow",
+          "return",
+          "round",
+          "sqrt",
+          "static",
+          "y"
+        ]
+      },
+      {
+        "module": "AIUtil.ts",
+        "moduleSha256": "b42172e3f5287361587a3bd9d008d90c5acdd6a33f3ab939b4bc3983a4db7a06",
+        "functionLabel": "pT",
+        "rangeConvention": "UTF-8 bytes, zero-based, end exclusive",
+        "moduleByteStart": 921,
+        "moduleByteEnd": 1616,
+        "decodedBundleByteStart": 636652,
+        "decodedBundleByteEnd": 637347,
+        "excerptSha256": "f4daa283abdb5909dc9f72facfb19f3d755850ec54f709b2d99928d1475d72e8",
+        "auditedIdentifiers": [
+          "depth",
+          "dx",
+          "else",
+          "for",
+          "if",
+          "indexOf",
+          "isNaN",
+          "length",
+          "let",
+          "new",
+          "nodes",
+          "nps",
+          "null",
+          "pT",
+          "parseInt",
+          "push",
+          "pv",
+          "r",
+          "return",
+          "score",
+          "sh",
+          "split",
+          "static",
+          "tbhits",
+          "tf",
+          "time",
+          "var",
+          "y",
+          "yYe"
+        ]
+      }
+    ],
+    "parserConstructorDependency": {
+      "module": "AIUtil.ts",
+      "moduleSha256": "b42172e3f5287361587a3bd9d008d90c5acdd6a33f3ab939b4bc3983a4db7a06",
+      "functionLabel": "constructor",
+      "rangeConvention": "UTF-8 bytes, zero-based, end exclusive",
+      "moduleByteStart": 821,
+      "moduleByteEnd": 921,
+      "decodedBundleByteStart": 636552,
+      "decodedBundleByteEnd": 636652,
+      "excerptSha256": "974ac602954e6b006ba7739145bd43e3bd3628fd23f785ac48f31245f063c6cc",
+      "auditedIdentifiers": [
+        "constructor",
+        "depth",
+        "nodes",
+        "nps",
+        "pv",
+        "score",
+        "tbhits",
+        "this",
+        "time",
+        "yYe"
+      ]
+    },
+    "oracleScriptSha256": "c886e3bc176feac55a7c05e6d25a67f491e45ada40c16d53479ca285a7a19e8a",
+    "oracleRuntime": "v26.8.1",
+    "scope": "Only audited alc/JY/oPa/pT methods and the parser value-object constructor were evaluated. The module registration, app initialization, network, engine runtime and other business methods were not executed.",
+    "expectedValueSource": "Direct return values of exact source slices identified above; no production implementation or reimplemented reference formula supplies the expected values."
+  },
+  "fields": {
+    "compression": "input: raw signed score. expected: QiPuUtil.alc(input), a compressed score preserving sign within its domain.",
+    "engineScore": "input.type and input.value form a synthetic UCI info score field. parsedScore comes from PFAIReplyInfo.pT; normalizedScore is AIUtil.oPa(parsedScore). Scores remain in the input perspective; no FEN or side conversion is performed here.",
+    "moveQuality": "beforeRedScore and afterRedScore are both red-perspective scores already in the client score scale. moverColor 1=red, 2=black. Expected compression is after the source color sign conversion; loss is compressedBefore minus compressedAfter; moveScore is the exact JY return value.",
+    "reviewFlow": "before and after are raw UCI cp or mate scores already expressed from the SAME root mover perspective. pT decodes each score; oPa gives clientBefore/clientAfter; alc gives compressedBefore/compressedAfter; JY(clientBefore, clientAfter, 1) gives score. qualityColor=1 is a synthetic red argument preserving that shared mover perspective, not a claim that the actual mover must be red.",
+    "parser": "input is an authored UCI-like info line. expected is the parser value object, or null when rejected. yYe is the optional integer prefix; pv retains tokens from pv to line end."
+  },
+  "comparison": {
+    "numericAbsoluteTolerance": 1e-10,
+    "integerOutputsExact": true,
+    "preserveOutputBeforeDisplayRounding": true
+  },
+  "observedQuirks": [
+    "JY returns 100 for after=+30000 or -30000 regardless of the prior score or mover color.",
+    "alc returns 0 outside absolute score 30000; it does not saturate at 1000.",
+    "oPa passes through absolute cp<=15 and absolute cp>29000; exactly 29000 is still multiplied by 2.9 and rounded.",
+    "The linear oPa branch uses JavaScript Math.round directly, so signed half-integers are not odd-symmetric: cp 705 and -705 do not normalize to exact negatives.",
+    "pT mate 0 maps to -29999; positive and negative mate distances have different one-unit offsets."
+  ],
+  "vectors": {
+    "compression": [
+      {
+        "input": 0,
+        "expected": 0
+      },
+      {
+        "input": 1,
+        "expected": 1
+      },
+      {
+        "input": -1,
+        "expected": -1
+      },
+      {
+        "input": 499,
+        "expected": 499
+      },
+      {
+        "input": -499,
+        "expected": -499
+      },
+      {
+        "input": 500,
+        "expected": 500
+      },
+      {
+        "input": -500,
+        "expected": -500
+      },
+      {
+        "input": 501,
+        "expected": 500
+      },
+      {
+        "input": -501,
+        "expected": -500
+      },
+      {
+        "input": 503,
+        "expected": 501
+      },
+      {
+        "input": -503,
+        "expected": -501
+      },
+      {
+        "input": 999,
+        "expected": 699
+      },
+      {
+        "input": -999,
+        "expected": -699
+      },
+      {
+        "input": 1000,
+        "expected": 700
+      },
+      {
+        "input": -1000,
+        "expected": -700
+      },
+      {
+        "input": 1001,
+        "expected": 700
+      },
+      {
+        "input": -1001,
+        "expected": -700
+      },
+      {
+        "input": 1008,
+        "expected": 701
+      },
+      {
+        "input": -1008,
+        "expected": -701
+      },
+      {
+        "input": 2499,
+        "expected": 899
+      },
+      {
+        "input": -2499,
+        "expected": -899
+      },
+      {
+        "input": 2500,
+        "expected": 900
+      },
+      {
+        "input": -2500,
+        "expected": -900
+      },
+      {
+        "input": 2501,
+        "expected": 900
+      },
+      {
+        "input": -2501,
+        "expected": -900
+      },
+      {
+        "input": 2775,
+        "expected": 901
+      },
+      {
+        "input": -2775,
+        "expected": -901
+      },
+      {
+        "input": 29999,
+        "expected": 999
+      },
+      {
+        "input": -29999,
+        "expected": -999
+      },
+      {
+        "input": 30000,
+        "expected": 1000
+      },
+      {
+        "input": -30000,
+        "expected": -1000
+      },
+      {
+        "input": 30001,
+        "expected": 0
+      },
+      {
+        "input": -30001,
+        "expected": 0
+      }
+    ],
+    "engineScore": [
+      {
+        "input": {
+          "type": "cp",
+          "value": 0
+        },
+        "expected": {
+          "parsedScore": 0,
+          "normalizedScore": 0
+        }
+      },
+      {
+        "input": {
+          "type": "cp",
+          "value": 14
+        },
+        "expected": {
+          "parsedScore": 14,
+          "normalizedScore": 14
+        }
+      },
+      {
+        "input": {
+          "type": "cp",
+          "value": -14
+        },
+        "expected": {
+          "parsedScore": -14,
+          "normalizedScore": -14
+        }
+      },
+      {
+        "input": {
+          "type": "cp",
+          "value": 15
+        },
+        "expected": {
+          "parsedScore": 15,
+          "normalizedScore": 15
+        }
+      },
+      {
+        "input": {
+          "type": "cp",
+          "value": -15
+        },
+        "expected": {
+          "parsedScore": -15,
+          "normalizedScore": -15
+        }
+      },
+      {
+        "input": {
+          "type": "cp",
+          "value": 16
+        },
+        "expected": {
+          "parsedScore": 16,
+          "normalizedScore": 26
+        }
+      },
+      {
+        "input": {
+          "type": "cp",
+          "value": -16
+        },
+        "expected": {
+          "parsedScore": -16,
+          "normalizedScore": -26
+        }
+      },
+      {
+        "input": {
+          "type": "cp",
+          "value": 699
+        },
+        "expected": {
+          "parsedScore": 699,
+          "normalizedScore": 1982
+        }
+      },
+      {
+        "input": {
+          "type": "cp",
+          "value": -699
+        },
+        "expected": {
+          "parsedScore": -699,
+          "normalizedScore": -1982
+        }
+      },
+      {
+        "input": {
+          "type": "cp",
+          "value": 700
+        },
+        "expected": {
+          "parsedScore": 700,
+          "normalizedScore": 2014
+        }
+      },
+      {
+        "input": {
+          "type": "cp",
+          "value": -700
+        },
+        "expected": {
+          "parsedScore": -700,
+          "normalizedScore": -2014
+        }
+      },
+      {
+        "input": {
+          "type": "cp",
+          "value": 701
+        },
+        "expected": {
+          "parsedScore": 701,
+          "normalizedScore": 2033
+        }
+      },
+      {
+        "input": {
+          "type": "cp",
+          "value": -701
+        },
+        "expected": {
+          "parsedScore": -701,
+          "normalizedScore": -2033
+        }
+      },
+      {
+        "input": {
+          "type": "cp",
+          "value": 705
+        },
+        "expected": {
+          "parsedScore": 705,
+          "normalizedScore": 2045
+        }
+      },
+      {
+        "input": {
+          "type": "cp",
+          "value": -705
+        },
+        "expected": {
+          "parsedScore": -705,
+          "normalizedScore": -2044
+        }
+      },
+      {
+        "input": {
+          "type": "cp",
+          "value": 28999
+        },
+        "expected": {
+          "parsedScore": 28999,
+          "normalizedScore": 84097
+        }
+      },
+      {
+        "input": {
+          "type": "cp",
+          "value": -28999
+        },
+        "expected": {
+          "parsedScore": -28999,
+          "normalizedScore": -84097
+        }
+      },
+      {
+        "input": {
+          "type": "cp",
+          "value": 29000
+        },
+        "expected": {
+          "parsedScore": 29000,
+          "normalizedScore": 84100
+        }
+      },
+      {
+        "input": {
+          "type": "cp",
+          "value": -29000
+        },
+        "expected": {
+          "parsedScore": -29000,
+          "normalizedScore": -84100
+        }
+      },
+      {
+        "input": {
+          "type": "cp",
+          "value": 29001
+        },
+        "expected": {
+          "parsedScore": 29001,
+          "normalizedScore": 29001
+        }
+      },
+      {
+        "input": {
+          "type": "cp",
+          "value": -29001
+        },
+        "expected": {
+          "parsedScore": -29001,
+          "normalizedScore": -29001
+        }
+      },
+      {
+        "input": {
+          "type": "cp",
+          "value": 29999
+        },
+        "expected": {
+          "parsedScore": 29999,
+          "normalizedScore": 29999
+        }
+      },
+      {
+        "input": {
+          "type": "cp",
+          "value": -29999
+        },
+        "expected": {
+          "parsedScore": -29999,
+          "normalizedScore": -29999
+        }
+      },
+      {
+        "input": {
+          "type": "cp",
+          "value": 30000
+        },
+        "expected": {
+          "parsedScore": 30000,
+          "normalizedScore": 30000
+        }
+      },
+      {
+        "input": {
+          "type": "cp",
+          "value": -30000
+        },
+        "expected": {
+          "parsedScore": -30000,
+          "normalizedScore": -30000
+        }
+      },
+      {
+        "input": {
+          "type": "mate",
+          "value": 0
+        },
+        "expected": {
+          "parsedScore": -29999,
+          "normalizedScore": -29999
+        }
+      },
+      {
+        "input": {
+          "type": "mate",
+          "value": 1
+        },
+        "expected": {
+          "parsedScore": 29998,
+          "normalizedScore": 29998
+        }
+      },
+      {
+        "input": {
+          "type": "mate",
+          "value": -1
+        },
+        "expected": {
+          "parsedScore": -29997,
+          "normalizedScore": -29997
+        }
+      },
+      {
+        "input": {
+          "type": "mate",
+          "value": 2
+        },
+        "expected": {
+          "parsedScore": 29996,
+          "normalizedScore": 29996
+        }
+      },
+      {
+        "input": {
+          "type": "mate",
+          "value": -2
+        },
+        "expected": {
+          "parsedScore": -29995,
+          "normalizedScore": -29995
+        }
+      },
+      {
+        "input": {
+          "type": "mate",
+          "value": 3
+        },
+        "expected": {
+          "parsedScore": 29994,
+          "normalizedScore": 29994
+        }
+      },
+      {
+        "input": {
+          "type": "mate",
+          "value": -3
+        },
+        "expected": {
+          "parsedScore": -29993,
+          "normalizedScore": -29993
+        }
+      },
+      {
+        "input": {
+          "type": "mate",
+          "value": 15
+        },
+        "expected": {
+          "parsedScore": 29970,
+          "normalizedScore": 29970
+        }
+      },
+      {
+        "input": {
+          "type": "mate",
+          "value": -15
+        },
+        "expected": {
+          "parsedScore": -29969,
+          "normalizedScore": -29969
+        }
+      },
+      {
+        "input": {
+          "type": "mate",
+          "value": 100
+        },
+        "expected": {
+          "parsedScore": 29800,
+          "normalizedScore": 29800
+        }
+      },
+      {
+        "input": {
+          "type": "mate",
+          "value": -100
+        },
+        "expected": {
+          "parsedScore": -29799,
+          "normalizedScore": -29799
+        }
+      }
+    ],
+    "moveQuality": [
+      {
+        "id": "red-loss--30",
+        "input": {
+          "beforeRedScore": -15,
+          "afterRedScore": 15,
+          "moverColor": 1
+        },
+        "expected": {
+          "compressedBefore": -15,
+          "compressedAfter": 15,
+          "loss": -30,
+          "moveScore": 100
+        }
+      },
+      {
+        "id": "red-loss--1",
+        "input": {
+          "beforeRedScore": 0,
+          "afterRedScore": 1,
+          "moverColor": 1
+        },
+        "expected": {
+          "compressedBefore": 0,
+          "compressedAfter": 1,
+          "loss": -1,
+          "moveScore": 100
+        }
+      },
+      {
+        "id": "red-loss-0",
+        "input": {
+          "beforeRedScore": 0,
+          "afterRedScore": 0,
+          "moverColor": 1
+        },
+        "expected": {
+          "compressedBefore": 0,
+          "compressedAfter": 0,
+          "loss": 0,
+          "moveScore": 100
+        }
+      },
+      {
+        "id": "red-loss-1",
+        "input": {
+          "beforeRedScore": 1,
+          "afterRedScore": 0,
+          "moverColor": 1
+        },
+        "expected": {
+          "compressedBefore": 1,
+          "compressedAfter": 0,
+          "loss": 1,
+          "moveScore": 99.33333333333333
+        }
+      },
+      {
+        "id": "red-loss-29",
+        "input": {
+          "beforeRedScore": 15,
+          "afterRedScore": -14,
+          "moverColor": 1
+        },
+        "expected": {
+          "compressedBefore": 15,
+          "compressedAfter": -14,
+          "loss": 29,
+          "moveScore": 80.66666666666667
+        }
+      },
+      {
+        "id": "red-loss-30",
+        "input": {
+          "beforeRedScore": 15,
+          "afterRedScore": -15,
+          "moverColor": 1
+        },
+        "expected": {
+          "compressedBefore": 15,
+          "compressedAfter": -15,
+          "loss": 30,
+          "moveScore": 80
+        }
+      },
+      {
+        "id": "red-loss-31",
+        "input": {
+          "beforeRedScore": 16,
+          "afterRedScore": -15,
+          "moverColor": 1
+        },
+        "expected": {
+          "compressedBefore": 16,
+          "compressedAfter": -15,
+          "loss": 31,
+          "moveScore": 79.33333333333333
+        }
+      },
+      {
+        "id": "red-loss-59",
+        "input": {
+          "beforeRedScore": 30,
+          "afterRedScore": -29,
+          "moverColor": 1
+        },
+        "expected": {
+          "compressedBefore": 30,
+          "compressedAfter": -29,
+          "loss": 59,
+          "moveScore": 60.66666666666667
+        }
+      },
+      {
+        "id": "red-loss-60",
+        "input": {
+          "beforeRedScore": 30,
+          "afterRedScore": -30,
+          "moverColor": 1
+        },
+        "expected": {
+          "compressedBefore": 30,
+          "compressedAfter": -30,
+          "loss": 60,
+          "moveScore": 60
+        }
+      },
+      {
+        "id": "red-loss-61",
+        "input": {
+          "beforeRedScore": 31,
+          "afterRedScore": -30,
+          "moverColor": 1
+        },
+        "expected": {
+          "compressedBefore": 31,
+          "compressedAfter": -30,
+          "loss": 61,
+          "moveScore": 59.666666666666664
+        }
+      },
+      {
+        "id": "red-loss-119",
+        "input": {
+          "beforeRedScore": 60,
+          "afterRedScore": -59,
+          "moverColor": 1
+        },
+        "expected": {
+          "compressedBefore": 60,
+          "compressedAfter": -59,
+          "loss": 119,
+          "moveScore": 40.33333333333333
+        }
+      },
+      {
+        "id": "red-loss-120",
+        "input": {
+          "beforeRedScore": 60,
+          "afterRedScore": -60,
+          "moverColor": 1
+        },
+        "expected": {
+          "compressedBefore": 60,
+          "compressedAfter": -60,
+          "loss": 120,
+          "moveScore": 40
+        }
+      },
+      {
+        "id": "red-loss-121",
+        "input": {
+          "beforeRedScore": 61,
+          "afterRedScore": -60,
+          "moverColor": 1
+        },
+        "expected": {
+          "compressedBefore": 61,
+          "compressedAfter": -60,
+          "loss": 121,
+          "moveScore": 39.666666666666664
+        }
+      },
+      {
+        "id": "red-loss-179",
+        "input": {
+          "beforeRedScore": 90,
+          "afterRedScore": -89,
+          "moverColor": 1
+        },
+        "expected": {
+          "compressedBefore": 90,
+          "compressedAfter": -89,
+          "loss": 179,
+          "moveScore": 20.333333333333332
+        }
+      },
+      {
+        "id": "red-loss-180",
+        "input": {
+          "beforeRedScore": 90,
+          "afterRedScore": -90,
+          "moverColor": 1
+        },
+        "expected": {
+          "compressedBefore": 90,
+          "compressedAfter": -90,
+          "loss": 180,
+          "moveScore": 20
+        }
+      },
+      {
+        "id": "red-loss-181",
+        "input": {
+          "beforeRedScore": 91,
+          "afterRedScore": -90,
+          "moverColor": 1
+        },
+        "expected": {
+          "compressedBefore": 91,
+          "compressedAfter": -90,
+          "loss": 181,
+          "moveScore": 19.666666666666668
+        }
+      },
+      {
+        "id": "red-loss-239",
+        "input": {
+          "beforeRedScore": 120,
+          "afterRedScore": -119,
+          "moverColor": 1
+        },
+        "expected": {
+          "compressedBefore": 120,
+          "compressedAfter": -119,
+          "loss": 239,
+          "moveScore": 0.33333333333333215
+        }
+      },
+      {
+        "id": "red-loss-240",
+        "input": {
+          "beforeRedScore": 120,
+          "afterRedScore": -120,
+          "moverColor": 1
+        },
+        "expected": {
+          "compressedBefore": 120,
+          "compressedAfter": -120,
+          "loss": 240,
+          "moveScore": 0
+        }
+      },
+      {
+        "id": "red-loss-241",
+        "input": {
+          "beforeRedScore": 121,
+          "afterRedScore": -120,
+          "moverColor": 1
+        },
+        "expected": {
+          "compressedBefore": 121,
+          "compressedAfter": -120,
+          "loss": 241,
+          "moveScore": -0.4166666666666667
+        }
+      },
+      {
+        "id": "red-loss-959",
+        "input": {
+          "beforeRedScore": 480,
+          "afterRedScore": -479,
+          "moverColor": 1
+        },
+        "expected": {
+          "compressedBefore": 480,
+          "compressedAfter": -479,
+          "loss": 959,
+          "moveScore": -299.5833333333333
+        }
+      },
+      {
+        "id": "red-loss-960",
+        "input": {
+          "beforeRedScore": 480,
+          "afterRedScore": -480,
+          "moverColor": 1
+        },
+        "expected": {
+          "compressedBefore": 480,
+          "compressedAfter": -480,
+          "loss": 960,
+          "moveScore": -300
+        }
+      },
+      {
+        "id": "red-loss-961",
+        "input": {
+          "beforeRedScore": 481,
+          "afterRedScore": -480,
+          "moverColor": 1
+        },
+        "expected": {
+          "compressedBefore": 481,
+          "compressedAfter": -480,
+          "loss": 961,
+          "moveScore": -300
+        }
+      },
+      {
+        "id": "black-loss-0",
+        "input": {
+          "beforeRedScore": 0,
+          "afterRedScore": 0,
+          "moverColor": 2
+        },
+        "expected": {
+          "compressedBefore": 0,
+          "compressedAfter": 0,
+          "loss": 0,
+          "moveScore": 100
+        }
+      },
+      {
+        "id": "black-loss-30",
+        "input": {
+          "beforeRedScore": -15,
+          "afterRedScore": 15,
+          "moverColor": 2
+        },
+        "expected": {
+          "compressedBefore": 15,
+          "compressedAfter": -15,
+          "loss": 30,
+          "moveScore": 80
+        }
+      },
+      {
+        "id": "black-loss-60",
+        "input": {
+          "beforeRedScore": -30,
+          "afterRedScore": 30,
+          "moverColor": 2
+        },
+        "expected": {
+          "compressedBefore": 30,
+          "compressedAfter": -30,
+          "loss": 60,
+          "moveScore": 60
+        }
+      },
+      {
+        "id": "black-loss-120",
+        "input": {
+          "beforeRedScore": -60,
+          "afterRedScore": 60,
+          "moverColor": 2
+        },
+        "expected": {
+          "compressedBefore": 60,
+          "compressedAfter": -60,
+          "loss": 120,
+          "moveScore": 40
+        }
+      },
+      {
+        "id": "black-loss-180",
+        "input": {
+          "beforeRedScore": -90,
+          "afterRedScore": 90,
+          "moverColor": 2
+        },
+        "expected": {
+          "compressedBefore": 90,
+          "compressedAfter": -90,
+          "loss": 180,
+          "moveScore": 20
+        }
+      },
+      {
+        "id": "black-loss-240",
+        "input": {
+          "beforeRedScore": -120,
+          "afterRedScore": 120,
+          "moverColor": 2
+        },
+        "expected": {
+          "compressedBefore": 120,
+          "compressedAfter": -120,
+          "loss": 240,
+          "moveScore": 0
+        }
+      },
+      {
+        "id": "black-loss-960",
+        "input": {
+          "beforeRedScore": -480,
+          "afterRedScore": 480,
+          "moverColor": 2
+        },
+        "expected": {
+          "compressedBefore": 480,
+          "compressedAfter": -480,
+          "loss": 960,
+          "moveScore": -300
+        }
+      },
+      {
+        "id": "compressed-advantage-red",
+        "input": {
+          "beforeRedScore": 1000,
+          "afterRedScore": 900,
+          "moverColor": 1
+        },
+        "expected": {
+          "compressedBefore": 700,
+          "compressedAfter": 660,
+          "loss": 40,
+          "moveScore": 73.33333333333333
+        }
+      },
+      {
+        "id": "compressed-advantage-black",
+        "input": {
+          "beforeRedScore": -1000,
+          "afterRedScore": -900,
+          "moverColor": 2
+        },
+        "expected": {
+          "compressedBefore": 700,
+          "compressedAfter": 660,
+          "loss": 40,
+          "moveScore": 73.33333333333333
+        }
+      },
+      {
+        "id": "compressed-large-red",
+        "input": {
+          "beforeRedScore": 2500,
+          "afterRedScore": 1000,
+          "moverColor": 1
+        },
+        "expected": {
+          "compressedBefore": 900,
+          "compressedAfter": 700,
+          "loss": 200,
+          "moveScore": 13.333333333333332
+        }
+      },
+      {
+        "id": "compressed-large-black",
+        "input": {
+          "beforeRedScore": -2500,
+          "afterRedScore": -1000,
+          "moverColor": 2
+        },
+        "expected": {
+          "compressedBefore": 900,
+          "compressedAfter": 700,
+          "loss": 200,
+          "moveScore": 13.333333333333332
+        }
+      },
+      {
+        "id": "terminal-after--30000-color-1",
+        "input": {
+          "beforeRedScore": 123,
+          "afterRedScore": -30000,
+          "moverColor": 1
+        },
+        "expected": {
+          "compressedBefore": 123,
+          "compressedAfter": -1000,
+          "loss": 1123,
+          "moveScore": 100
+        }
+      },
+      {
+        "id": "terminal-after-30000-color-1",
+        "input": {
+          "beforeRedScore": 123,
+          "afterRedScore": 30000,
+          "moverColor": 1
+        },
+        "expected": {
+          "compressedBefore": 123,
+          "compressedAfter": 1000,
+          "loss": -877,
+          "moveScore": 100
+        }
+      },
+      {
+        "id": "terminal-after--30000-color-2",
+        "input": {
+          "beforeRedScore": 123,
+          "afterRedScore": -30000,
+          "moverColor": 2
+        },
+        "expected": {
+          "compressedBefore": -123,
+          "compressedAfter": 1000,
+          "loss": -1123,
+          "moveScore": 100
+        }
+      },
+      {
+        "id": "terminal-after-30000-color-2",
+        "input": {
+          "beforeRedScore": 123,
+          "afterRedScore": 30000,
+          "moverColor": 2
+        },
+        "expected": {
+          "compressedBefore": -123,
+          "compressedAfter": -1000,
+          "loss": 877,
+          "moveScore": 100
+        }
+      },
+      {
+        "id": "out-of-domain-positive-before",
+        "input": {
+          "beforeRedScore": 30001,
+          "afterRedScore": 0,
+          "moverColor": 1
+        },
+        "expected": {
+          "compressedBefore": 0,
+          "compressedAfter": 0,
+          "loss": 0,
+          "moveScore": 100
+        }
+      },
+      {
+        "id": "out-of-domain-negative-before",
+        "input": {
+          "beforeRedScore": -30001,
+          "afterRedScore": 0,
+          "moverColor": 1
+        },
+        "expected": {
+          "compressedBefore": 0,
+          "compressedAfter": 0,
+          "loss": 0,
+          "moveScore": 100
+        }
+      }
+    ],
+    "reviewFlow": [
+      {
+        "id": "cp-100-to-cp-99",
+        "input": {
+          "before": {
+            "type": "cp",
+            "value": 100
+          },
+          "after": {
+            "type": "cp",
+            "value": 99
+          },
+          "perspective": "same-root-mover",
+          "qualityColor": 1
+        },
+        "expected": {
+          "parsedBefore": 100,
+          "parsedAfter": 99,
+          "clientBefore": 157,
+          "clientAfter": 155,
+          "compressedBefore": 157,
+          "compressedAfter": 155,
+          "loss": 2,
+          "score": 98.66666666666667
+        }
+      },
+      {
+        "id": "cp-100-to-cp--200",
+        "input": {
+          "before": {
+            "type": "cp",
+            "value": 100
+          },
+          "after": {
+            "type": "cp",
+            "value": -200
+          },
+          "perspective": "same-root-mover",
+          "qualityColor": 1
+        },
+        "expected": {
+          "parsedBefore": 100,
+          "parsedAfter": -200,
+          "clientBefore": 157,
+          "clientAfter": -325,
+          "compressedBefore": 157,
+          "compressedAfter": -325,
+          "loss": 482,
+          "score": -100.83333333333333
+        }
+      },
+      {
+        "id": "cp-100-to-cp--100",
+        "input": {
+          "before": {
+            "type": "cp",
+            "value": 100
+          },
+          "after": {
+            "type": "cp",
+            "value": -100
+          },
+          "perspective": "same-root-mover",
+          "qualityColor": 1
+        },
+        "expected": {
+          "parsedBefore": 100,
+          "parsedAfter": -100,
+          "clientBefore": 157,
+          "clientAfter": -157,
+          "compressedBefore": 157,
+          "compressedAfter": -157,
+          "loss": 314,
+          "score": -30.833333333333332
+        }
+      },
+      {
+        "id": "cp-100-to-cp--400",
+        "input": {
+          "before": {
+            "type": "cp",
+            "value": 100
+          },
+          "after": {
+            "type": "cp",
+            "value": -400
+          },
+          "perspective": "same-root-mover",
+          "qualityColor": 1
+        },
+        "expected": {
+          "parsedBefore": 100,
+          "parsedAfter": -400,
+          "clientBefore": 157,
+          "clientAfter": -723,
+          "compressedBefore": 157,
+          "compressedAfter": -589,
+          "loss": 746,
+          "score": -210.83333333333334
+        }
+      },
+      {
+        "id": "cp-500-to-cp-450",
+        "input": {
+          "before": {
+            "type": "cp",
+            "value": 500
+          },
+          "after": {
+            "type": "cp",
+            "value": 450
+          },
+          "perspective": "same-root-mover",
+          "qualityColor": 1
+        },
+        "expected": {
+          "parsedBefore": 500,
+          "parsedAfter": 450,
+          "clientBefore": 974,
+          "clientAfter": 842,
+          "compressedBefore": 689,
+          "compressedAfter": 636,
+          "loss": 53,
+          "score": 64.66666666666667
+        }
+      },
+      {
+        "id": "cp-1000-to-cp-900",
+        "input": {
+          "before": {
+            "type": "cp",
+            "value": 1000
+          },
+          "after": {
+            "type": "cp",
+            "value": 900
+          },
+          "perspective": "same-root-mover",
+          "qualityColor": 1
+        },
+        "expected": {
+          "parsedBefore": 1000,
+          "parsedAfter": 900,
+          "clientBefore": 2900,
+          "clientAfter": 2610,
+          "compressedBefore": 901,
+          "compressedAfter": 900,
+          "loss": 1,
+          "score": 99.33333333333333
+        }
+      },
+      {
+        "id": "mate-3-to-cp-0",
+        "input": {
+          "before": {
+            "type": "mate",
+            "value": 3
+          },
+          "after": {
+            "type": "cp",
+            "value": 0
+          },
+          "perspective": "same-root-mover",
+          "qualityColor": 1
+        },
+        "expected": {
+          "parsedBefore": 29994,
+          "parsedAfter": 0,
+          "clientBefore": 29994,
+          "clientAfter": 0,
+          "compressedBefore": 999,
+          "compressedAfter": 0,
+          "loss": 999,
+          "score": -300
+        }
+      },
+      {
+        "id": "cp-100-to-mate-minus-2",
+        "input": {
+          "before": {
+            "type": "cp",
+            "value": 100
+          },
+          "after": {
+            "type": "mate",
+            "value": -2
+          },
+          "perspective": "same-root-mover",
+          "qualityColor": 1
+        },
+        "expected": {
+          "parsedBefore": 100,
+          "parsedAfter": -29995,
+          "clientBefore": 157,
+          "clientAfter": -29995,
+          "compressedBefore": 157,
+          "compressedAfter": -999,
+          "loss": 1156,
+          "score": -300
+        }
+      },
+      {
+        "id": "mate-3-to-mate-6",
+        "input": {
+          "before": {
+            "type": "mate",
+            "value": 3
+          },
+          "after": {
+            "type": "mate",
+            "value": 6
+          },
+          "perspective": "same-root-mover",
+          "qualityColor": 1
+        },
+        "expected": {
+          "parsedBefore": 29994,
+          "parsedAfter": 29988,
+          "clientBefore": 29994,
+          "clientAfter": 29988,
+          "compressedBefore": 999,
+          "compressedAfter": 999,
+          "loss": 0,
+          "score": 100
+        }
+      }
+    ],
+    "parser": [
+      {
+        "id": "plain-cp",
+        "input": "info depth 18 score cp 16 nodes 123456 time 789 nps 156 tbhits 3 pv h2e2 h9g7",
+        "expected": {
+          "yYe": 0,
+          "depth": 18,
+          "score": 16,
+          "time": 789,
+          "nodes": 123456,
+          "tbhits": 3,
+          "nps": 156,
+          "pv": [
+            "h2e2",
+            "h9g7"
+          ]
+        }
+      },
+      {
+        "id": "prefixed-negative-cp",
+        "input": "42 info depth 8 score cp -16 nodes 200 time 5 nps 40000 tbhits 0 pv a0a1",
+        "expected": {
+          "yYe": 42,
+          "depth": 8,
+          "score": -16,
+          "time": 5,
+          "nodes": 200,
+          "tbhits": 0,
+          "nps": 40000,
+          "pv": [
+            "a0a1"
+          ]
+        }
+      },
+      {
+        "id": "mate-zero-no-pv",
+        "input": "info depth 3 score mate 0",
+        "expected": {
+          "yYe": 0,
+          "depth": 3,
+          "score": -29999,
+          "time": 0,
+          "nodes": 0,
+          "tbhits": 0,
+          "nps": 0,
+          "pv": []
+        }
+      },
+      {
+        "id": "positive-mate",
+        "input": "info depth 10 score mate 2 pv a0a1 e9e8",
+        "expected": {
+          "yYe": 0,
+          "depth": 10,
+          "score": 29996,
+          "time": 0,
+          "nodes": 0,
+          "tbhits": 0,
+          "nps": 0,
+          "pv": [
+            "a0a1",
+            "e9e8"
+          ]
+        }
+      },
+      {
+        "id": "negative-mate",
+        "input": "info depth 10 score mate -2 pv a0a1 e9e8",
+        "expected": {
+          "yYe": 0,
+          "depth": 10,
+          "score": -29995,
+          "time": 0,
+          "nodes": 0,
+          "tbhits": 0,
+          "nps": 0,
+          "pv": [
+            "a0a1",
+            "e9e8"
+          ]
+        }
+      },
+      {
+        "id": "untyped-score-fallback",
+        "input": "info score 123 pv a0a1",
+        "expected": {
+          "yYe": 0,
+          "depth": 0,
+          "score": 123,
+          "time": 0,
+          "nodes": 0,
+          "tbhits": 0,
+          "nps": 0,
+          "pv": [
+            "a0a1"
+          ]
+        }
+      },
+      {
+        "id": "invalid-numeric-score",
+        "input": "info score cp nope pv a0a1",
+        "expected": null
+      },
+      {
+        "id": "not-info",
+        "input": "bestmove a0a1",
+        "expected": null
+      }
+    ]
+  }
+}

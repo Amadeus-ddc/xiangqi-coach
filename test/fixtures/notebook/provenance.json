@@ -1,0 +1,21 @@
+{
+  "repository": "https://github.com/gooooloo/XiangqiNotebook",
+  "sourceCommit": "043cc703ef43e15140687cb5ab069838f618f288",
+  "files": [
+    {
+      "source": "XiangqiNotebook/Models/PGNParser.swift",
+      "copy": "PGNParser.swift",
+      "sha256": "23514680a1f8d683a75433b9a708546de2280fa200a62e5711e655f936268dd1"
+    },
+    {
+      "source": "XiangqiNotebook/Models/GameObject.swift",
+      "copy": "GameObject.swift",
+      "sha256": "08950880c2811a05057867f3cdc0a0366b1884b1b9a61d3e4487ce731c579d23"
+    },
+    {
+      "source": "XiangqiNotebook/Models/Utils.swift",
+      "copy": "Utils.swift",
+      "sha256": "78ef113263fba927a7b5b235580548ee4bc03d6c32fdf8a2d3dbb4940a15a584"
+    }
+  ]
+}

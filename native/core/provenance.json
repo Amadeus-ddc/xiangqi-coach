@@ -1,0 +1,31 @@
+{
+  "repository": "https://github.com/gooooloo/XiangqiNotebook",
+  "baseCommit": "043cc70",
+  "files": [
+    {
+      "source": "XiangqiNotebook/ViewModels/BoardUtils.swift",
+      "copy": "BoardUtils.swift",
+      "sha256": "9ee6c496446d2f3515e3c5d18b382fcc956ab302a0efd828a65d4eda8955269d"
+    },
+    {
+      "source": "XiangqiNotebook/Models/MoveRules.swift",
+      "copy": "MoveRules.swift",
+      "sha256": "e7397eabd4c4dc99de4d6080b27e6f9ab23d9d6dd70cf2bbec91c4c8ea438df8"
+    },
+    {
+      "source": "XiangqiNotebook/Models/Move.swift",
+      "copy": "Move.swift",
+      "sha256": "169ee8b4b600cdfa0bd6a2cf9ab3759517318f1242ec14ff20429c88897653c1"
+    },
+    {
+      "source": "XiangqiNotebook/Models/FenObject.swift",
+      "copy": "FenObject.swift",
+      "sha256": "3cec5c7a2bad1ab62a538d8d72ab13bfe5a2b59a2bf51071cbb2882651ed55e2"
+    },
+    {
+      "source": "XiangqiNotebook/Models/PathConfig.swift",
+      "copy": "PathConfig.swift",
+      "sha256": "2c56314fd71654647f7765a4dc5b0229522bcebd8d8e3dd2f16cf4149f8f31d4"
+    }
+  ]
+}

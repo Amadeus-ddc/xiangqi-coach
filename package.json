@@ -1,0 +1,38 @@
+{
+  "name": "xiangqi-coach",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "node server/main.mjs",
+    "stdio": "node server/main.mjs --stdio",
+    "test": "node --test --test-concurrency=1 test/*.test.mjs",
+    "verify": "npm run build && npm test",
+    "package": "node scripts/package.mjs",
+    "setup:engine": "node scripts/setup-engine.mjs",
+    "dev": "node server/main.mjs --dev"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "@modelcontextprotocol/ext-apps": "1.7.5",
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  },
+  "description": "Interactive Chinese chess coach for MCP Apps and Codex: Pikafish, verified training puzzles, and game review.",
+  "license": "MIT",
+  "author": "Amadeus",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Amadeus-ddc/xiangqi-coach.git"
+  },
+  "homepage": "https://github.com/Amadeus-ddc/xiangqi-coach",
+  "bugs": {
+    "url": "https://github.com/Amadeus-ddc/xiangqi-coach/issues"
+  }
+}

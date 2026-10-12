@@ -1,0 +1,868 @@
+{
+  "verifiedAt": "2026-10-12T05:52:29.509536+00:00",
+  "scope": "Observed 4.4.6.2 client numeric path, public H5 static cross-check, independent implementation; no logged-in server equivalence claim",
+  "apk": {
+    "sha256": "f1f86c38d3a34e1fe5c7c2d2f8939eb2284c873e3bcfe615e43b3d00a80682c0",
+    "bytes": 198465378,
+    "version": "4.4.6.2",
+    "signatureVerified": false,
+    "androidExecuted": false
+  },
+  "decodedAssets": [
+    {
+      "member": "assets/assets/internal/index.jsc",
+      "originalBytes": 10892,
+      "originalSha256": "3d69f7a9815f764f096a3b747468f5a8223f9bae4533306d10418e4bf59407f0",
+      "decodedBytes": 43507,
+      "decodedSha256": "95400df632736fdfdc9e206e5950ded1dc5bf668b676050ff012cfb5f038f46c",
+      "path": "decoded/assets/assets/internal/index.js"
+    },
+    {
+      "member": "assets/assets/multiCommon/index.jsc",
+      "originalBytes": 4660,
+      "originalSha256": "7d1e995033a0e4f22acb47b50c8ab70c374bd8d15fad9acafe906c9c728af390",
+      "decodedBytes": 11504,
+      "decodedSha256": "ef1e18b2e53a45fa4aa776b18feeb2b8e2fcde50206d24eb39cba1aa4440a800",
+      "path": "decoded/assets/assets/multiCommon/index.js"
+    },
+    {
+      "member": "assets/assets/resources/index.jsc",
+      "originalBytes": 3000,
+      "originalSha256": "e791642e6efb8c0d7a8b93f9ebebbdf32df6a7826b52800863009e15c08e6cb0",
+      "decodedBytes": 7803,
+      "decodedSha256": "893b743e0a665f4ee570d460d06f367c3c0b5a8108aa7d198598e629db4ff365",
+      "path": "decoded/assets/assets/resources/index.js"
+    },
+    {
+      "member": "assets/assets/scripts/index.jsc",
+      "originalBytes": 2907920,
+      "originalSha256": "9eadd80722b6a58e18c19b342c44b47f26f98c8be413423fbe709ea6e3290686",
+      "decodedBytes": 11189397,
+      "decodedSha256": "a423474f720218e9febfb558d7c8a95f5b03852032795c7a6b6a9ec2d9501fc7",
+      "path": "decoded/assets/assets/scripts/index.js"
+    },
+    {
+      "member": "assets/engines/v2/adapter/adapter-min.jsc",
+      "originalBytes": 37592,
+      "originalSha256": "e5416cb8870d598bda61e94b67097b8e3575a557b602f9cfcbd7b84591a93c88",
+      "decodedBytes": 218853,
+      "decodedSha256": "ec6ab6ea3ce781daca2519521c91faa62332102d03ad28131a9c722bcd79400f",
+      "path": "decoded/assets/engines/v2/adapter/adapter-min.js"
+    },
+    {
+      "member": "assets/engines/v2/adapter/cache-manager-v3.jsc",
+      "originalBytes": 12868,
+      "originalSha256": "16aa95c50a5fef1bd5754e956f819893528895380b09907f40e4dc8dbcb343a9",
+      "decodedBytes": 52614,
+      "decodedSha256": "93895683c8004340cc402520d8ba48611f04ae578fbb76cb69f72f45a6f03e38",
+      "path": "decoded/assets/engines/v2/adapter/cache-manager-v3.js"
+    },
+    {
+      "member": "assets/engines/v2/adapter/gl-opt-mode.jsc",
+      "originalBytes": 7500,
+      "originalSha256": "bdecf4ab914716c7083605bc02d544ef6f228ea3fa6cd270e85d243dbb3e3ce3",
+      "decodedBytes": 40453,
+      "decodedSha256": "86de6a6c618a872e012449ccce1908a3c745d0d87c8da789334a6723ee97ec36",
+      "path": "decoded/assets/engines/v2/adapter/gl-opt-mode.js"
+    },
+    {
+      "member": "assets/engines/v2/assets/internal/index.jsc",
+      "originalBytes": 292,
+      "originalSha256": "b311f7e47fc46e1eb062e39176198332be6868034a44cde461dd58b9bb68ffc7",
+      "decodedBytes": 465,
+      "decodedSha256": "65ed7849c5b0850e0d80caaa38f32b9b3ed08fead43f9fc84eaca32074670587",
+      "path": "decoded/assets/engines/v2/assets/internal/index.js"
+    },
+    {
+      "member": "assets/engines/v2/assets/multTextures/index.jsc",
+      "originalBytes": 3032,
+      "originalSha256": "f28a086f1b5b734a33a85a1c596485fdbffa7a723b4e40836f43551e258b3a3a",
+      "decodedBytes": 14428,
+      "decodedSha256": "1eba0028c32df6d1451028eac811e0b5c57c981a0524bdacb7bccab8a43652b3",
+      "path": "decoded/assets/engines/v2/assets/multTextures/index.js"
+    },
+    {
+      "member": "assets/engines/v2/cocos/cocos2d-js-min.jsc",
+      "originalBytes": 337736,
+      "originalSha256": "c0535cb99713f1b1d4114451b0d2f08759129e19d306f94803cef7a39ee241be",
+      "decodedBytes": 1241842,
+      "decodedSha256": "17466ce48607f8440e15abc3bee428e0fc99577a9c1eee910bcbb9a0f6dd8dc3",
+      "path": "decoded/assets/engines/v2/cocos/cocos2d-js-min.js"
+    },
+    {
+      "member": "assets/engines/v2/game.jsc",
+      "originalBytes": 3188,
+      "originalSha256": "88d322b8150c9819e15b064a8e1e68a2f3c1e3a70320a60f4e4b674eeea64b73",
+      "decodedBytes": 8471,
+      "decodedSha256": "f6f13237180d8082084df98ac0486dfda93836b200455dd025dce9f0027874d4",
+      "path": "decoded/assets/engines/v2/game.js"
+    },
+    {
+      "member": "assets/handlers/createRewardedVideoAd.jsc",
+      "originalBytes": 1364,
+      "originalSha256": "90d0ab7089d339afd072387eaf77d2fb7ae76d06a17e3deef25dc3f6d3c80b2c",
+      "decodedBytes": 4672,
+      "decodedSha256": "29f2a9ed11a403b484aae70323c40a1d130fdb571209c4ebe01ebe234afaeb04",
+      "path": "decoded/assets/handlers/createRewardedVideoAd.js"
+    },
+    {
+      "member": "assets/handlers/shareAppMessage.jsc",
+      "originalBytes": 904,
+      "originalSha256": "aea8a9724dd9792faf8ba6c84eaa93ef6ae20a4a326808ed8ecffa19e9e88271",
+      "decodedBytes": 2004,
+      "decodedSha256": "a5e36e0ee3f7d13b8cd40096f1f377c54b663cc2ab795b658d8189055fb3424f",
+      "path": "decoded/assets/handlers/shareAppMessage.js"
+    },
+    {
+      "member": "assets/sandbox/client/bootstrap.jsc",
+      "originalBytes": 2744,
+      "originalSha256": "ac93daa08826e8f99238d524bbe03d9797cda4d0d6899f4e306eeb36a42cdf37",
+      "decodedBytes": 8270,
+      "decodedSha256": "13b78142a1504ac40a18bbd016758dee755be7dad56bc84f9d2db446a2fc86c5",
+      "path": "decoded/assets/sandbox/client/bootstrap.js"
+    },
+    {
+      "member": "assets/sandbox/client/host-bridge-client.jsc",
+      "originalBytes": 2484,
+      "originalSha256": "318b15e629115cf26128151f1e1bbfc5ebca6dd5ea799e3d92f62e3475e25a7b",
+      "decodedBytes": 10655,
+      "decodedSha256": "1778d0af9b0971fa13015a741efa4098631cfdd01622ce49845b6281dbb91c5d",
+      "path": "decoded/assets/sandbox/client/host-bridge-client.js"
+    },
+    {
+      "member": "assets/sandbox/client/index.jsc",
+      "originalBytes": 772,
+      "originalSha256": "c3e746a99432b85248369956f98c2db21ecf9f40ea8aae142b365154c1ed6dd6",
+      "decodedBytes": 1429,
+      "decodedSha256": "02ea667e7db91949373165838a30f83b61a98f79bdcd6677394100a97f46099c",
+      "path": "decoded/assets/sandbox/client/index.js"
+    },
+    {
+      "member": "assets/sandbox/client/lib/api-router.jsc",
+      "originalBytes": 3480,
+      "originalSha256": "c88dd2e596f0cc7a699cfbdcfa859b60e2dc6d7ac952498a869f8f5a880e8bc5",
+      "decodedBytes": 10855,
+      "decodedSha256": "ad3e699a517c6e17266c6feff5e990dd8c731cf14513b78d33a36213c80ae879",
+      "path": "decoded/assets/sandbox/client/lib/api-router.js"
+    },
+    {
+      "member": "assets/sandbox/client/lib/host-proxy.jsc",
+      "originalBytes": 2552,
+      "originalSha256": "b0de18142a0ff4f9149c6837e769a48710722f91224ebc55a49f1bfcd60f8fc8",
+      "decodedBytes": 7858,
+      "decodedSha256": "ded85be715876b8d5b3b663dee227cccabe1f026eb178a3529557e9a1f8363af",
+      "path": "decoded/assets/sandbox/client/lib/host-proxy.js"
+    },
+    {
+      "member": "assets/sandbox/client/lib/utils.jsc",
+      "originalBytes": 2072,
+      "originalSha256": "21e873da295dace2345221436b55bfb7a4245c2b25050c4d72450599d20df532",
+      "decodedBytes": 5058,
+      "decodedSha256": "51079dbe0ba2baf03053830ac34eeb0d3974e9396d2026225d050ef642f79537",
+      "path": "decoded/assets/sandbox/client/lib/utils.js"
+    },
+    {
+      "member": "assets/sandbox/client/lifecycle/destroy.jsc",
+      "originalBytes": 1504,
+      "originalSha256": "e07ca4d6ef3f8f32de05b98d23eaf220cec29ba279c84ed38d714f30a1dc5761",
+      "decodedBytes": 3040,
+      "decodedSha256": "e4d57f6fabda5b267412a4e58568e71101faa321f6a9e72cf76198e1c7430e30",
+      "path": "decoded/assets/sandbox/client/lifecycle/destroy.js"
+    },
+    {
+      "member": "assets/sandbox/client/lifecycle/global-scope.jsc",
+      "originalBytes": 1452,
+      "originalSha256": "5081e7435b50b18a199dff8b7652757e69069008084eab843d98dcce36513dd9",
+      "decodedBytes": 3613,
+      "decodedSha256": "de12379fd747b82b3eb9c87bd61063e4034452e3f49db0709ad829eb1f8c991a",
+      "path": "decoded/assets/sandbox/client/lifecycle/global-scope.js"
+    },
+    {
+      "member": "assets/sandbox/client/lifecycle/require-scope.jsc",
+      "originalBytes": 2392,
+      "originalSha256": "4b3e255adf71c21e87d4e9256fde144fc123f0b7b9ef361a3e56f943c508d323",
+      "decodedBytes": 8215,
+      "decodedSha256": "84be964039f5afaf7fbe9299a51672d88dd4d28344d336a7bd8b9ee725f3b8d6",
+      "path": "decoded/assets/sandbox/client/lifecycle/require-scope.js"
+    },
+    {
+      "member": "assets/sandbox/client/native-wx-runtime/audio.jsc",
+      "originalBytes": 2832,
+      "originalSha256": "a1cccb9427b9b7d0d3724f1828e62a87e5b8b88f9039a312f64109e30c0d17a3",
+      "decodedBytes": 9374,
+      "decodedSha256": "bbff585a53aacea2a3feb17ace414ace2a10f5aff6da0dc2d6bc6dcd8b8ef0e0",
+      "path": "decoded/assets/sandbox/client/native-wx-runtime/audio.js"
+    },
+    {
+      "member": "assets/sandbox/client/native-wx-runtime/canvas-image.jsc",
+      "originalBytes": 6656,
+      "originalSha256": "a5123ff6de484a7c6e4a98ee527380ef98fa9e08a98633652b3695f86cd50a49",
+      "decodedBytes": 28976,
+      "decodedSha256": "b1a87f67837b8a3c54052fdbf7602029b06bfbdcc3c6721d60934581520d5843",
+      "path": "decoded/assets/sandbox/client/native-wx-runtime/canvas-image.js"
+    },
+    {
+      "member": "assets/sandbox/client/native-wx-runtime/filesystem.jsc",
+      "originalBytes": 2124,
+      "originalSha256": "f80074c19a7a09618d165a5b4ea789c019c130166043f42a13b66732bd0fdeea",
+      "decodedBytes": 7967,
+      "decodedSha256": "18e0533d85569778160799e48f4a9f5ce82708ad2806254b20e38d6304296cd1",
+      "path": "decoded/assets/sandbox/client/native-wx-runtime/filesystem.js"
+    },
+    {
+      "member": "assets/sandbox/client/native-wx-runtime/lifecycle-events.jsc",
+      "originalBytes": 6856,
+      "originalSha256": "7f05fa8ee25ed085ffd6db61d45b84dc5aaa6d0d994190871d50a0a7df0dedba",
+      "decodedBytes": 29344,
+      "decodedSha256": "c03c418f0a56fe107cfda767ed0ab7cfd84737a87206341f23a089df0fbc9eae",
+      "path": "decoded/assets/sandbox/client/native-wx-runtime/lifecycle-events.js"
+    },
+    {
+      "member": "assets/sandbox/client/native-wx-runtime/network.jsc",
+      "originalBytes": 2696,
+      "originalSha256": "801b69c01906727403b3a7945a80c3d4d9e3cb2e328e13e8b397f4ffbb627b9a",
+      "decodedBytes": 11775,
+      "decodedSha256": "618ea3ab7c513ea57be613673d857315861a7cb34d9dc9be116c6bc1a706cb1c",
+      "path": "decoded/assets/sandbox/client/native-wx-runtime/network.js"
+    },
+    {
+      "member": "assets/sandbox/client/native-wx-runtime/storage.jsc",
+      "originalBytes": 2328,
+      "originalSha256": "37e5a92c22bf136960b47c218d00e26025c30a9e4b589352eef50d5b582e9636",
+      "decodedBytes": 8996,
+      "decodedSha256": "1787cd2e6a3e6f30143897078d62a64e2c498c144ae8d025131cb34652d6cee3",
+      "path": "decoded/assets/sandbox/client/native-wx-runtime/storage.js"
+    },
+    {
+      "member": "assets/sandbox/client/wx-api/host-rpc-apis.jsc",
+      "originalBytes": 1888,
+      "originalSha256": "30e8c24e1f757c88563ca94404c1dcca3f417ec86bddb41001eb80f20a53f319",
+      "decodedBytes": 5689,
+      "decodedSha256": "1bd4a3a82e4e32f84dea96d5fd7f39b8b34c9cdbc249c8eaa828bf5a503a4409",
+      "path": "decoded/assets/sandbox/client/wx-api/host-rpc-apis.js"
+    },
+    {
+      "member": "assets/sandbox/client/wx-api/launch-options.jsc",
+      "originalBytes": 1920,
+      "originalSha256": "e62e2832be5dc127d71e158e6c3afd25c6c67e8fe1190f0da9c1ab6a505d9d91",
+      "decodedBytes": 4842,
+      "decodedSha256": "0e1acd6a575d0c741e5482a559d8de14a22f2f6ac06925387f17902665a487e4",
+      "path": "decoded/assets/sandbox/client/wx-api/launch-options.js"
+    },
+    {
+      "member": "assets/sandbox/client/wx-api/rewarded-video-ad.jsc",
+      "originalBytes": 744,
+      "originalSha256": "8f956983ddfdc2af63e5c879eccb2f9208aa14e75314d04126f689cbe3dea252",
+      "decodedBytes": 1648,
+      "decodedSha256": "07bcf184cb8bf6ae30234951800c793b35dc25f30aec01b74f738057d71f6867",
+      "path": "decoded/assets/sandbox/client/wx-api/rewarded-video-ad.js"
+    },
+    {
+      "member": "assets/sandbox/client/wx-api/stubs.jsc",
+      "originalBytes": 2136,
+      "originalSha256": "fe360d8724b5c3f65c093cad8c0a5f5227d0b1455e7eb68b285658d7e8fb5399",
+      "decodedBytes": 5597,
+      "decodedSha256": "5c12d0680bd34b838aae7b902d10d60b00a84a3ea2a78533d3155206ed394fc3",
+      "path": "decoded/assets/sandbox/client/wx-api/stubs.js"
+    },
+    {
+      "member": "assets/sandbox/client/wx-api/system-info.jsc",
+      "originalBytes": 1392,
+      "originalSha256": "4090cb3367807111cc5ec5c1599eb5e65c1121047a553158485b21f85a31f316",
+      "decodedBytes": 3758,
+      "decodedSha256": "31f798beead1a18e587b88867aeb160d6a22d7711837118c3342455ebe3a0de7",
+      "path": "decoded/assets/sandbox/client/wx-api/system-info.js"
+    },
+    {
+      "member": "assets/sandbox/client/wx-api/timer.jsc",
+      "originalBytes": 1312,
+      "originalSha256": "0b8668e318d9e68a3f531e4d94bc3c1d2c706a1cde2e905074daeeb5df78b823",
+      "decodedBytes": 3381,
+      "decodedSha256": "44b453108d5c60893a33ec684f03380bb02e9d6b7dc906f38deff89b0e429ba8",
+      "path": "decoded/assets/sandbox/client/wx-api/timer.js"
+    },
+    {
+      "member": "assets/sandbox/client/wx-api/video-bridge.jsc",
+      "originalBytes": 2168,
+      "originalSha256": "51f1a04c4789044ca48ff2c527d00eb3cceb1f510b3262f4db182501adbfd87b",
+      "decodedBytes": 7511,
+      "decodedSha256": "3d8923425eb6a74a70ff5c495fa14e786f90af743b5a0be420a8a6e7e83d6f69",
+      "path": "decoded/assets/sandbox/client/wx-api/video-bridge.js"
+    },
+    {
+      "member": "assets/sandbox/host-v2/engine-scope.jsc",
+      "originalBytes": 992,
+      "originalSha256": "a0f323f2a29c6755ffd39ccf2be1b2f04458227ac84e14ac1445863811694eff",
+      "decodedBytes": 2961,
+      "decodedSha256": "7b4bdf7e96df3f80cb91c14ea1acaf8506b8724470ce871b4faad7ad92793a81",
+      "path": "decoded/assets/sandbox/host-v2/engine-scope.js"
+    },
+    {
+      "member": "assets/sandbox/host-v2/host-bridge.jsc",
+      "originalBytes": 2524,
+      "originalSha256": "71542faad3ccf82560c645a21cc486a5604987ab63a94b1bb7dd6d6b5362a5db",
+      "decodedBytes": 8115,
+      "decodedSha256": "bf4f8c7ec57a95136bc447f0a84d74e527ee30863c13f38c122e1038fcb38c19",
+      "path": "decoded/assets/sandbox/host-v2/host-bridge.js"
+    },
+    {
+      "member": "assets/sandbox/host-v2/index.jsc",
+      "originalBytes": 736,
+      "originalSha256": "2c6cfbc8c053f715148000021d59be581bfa2ca77ce02b838cadfad6495dde9e",
+      "decodedBytes": 1576,
+      "decodedSha256": "fabce3644165a6f559b332705423527bc720ddbdce31990a3455ad58d7bb6428",
+      "path": "decoded/assets/sandbox/host-v2/index.js"
+    },
+    {
+      "member": "assets/sandbox/host-v2/lib/module-loader.jsc",
+      "originalBytes": 736,
+      "originalSha256": "47909e7ca005632a8dcd399db1ea36582f3fd8caff515cfee667412be268f66d",
+      "decodedBytes": 1440,
+      "decodedSha256": "f39dc6669f9adf26bf72a55a0988b8d4a61e1812f40c7ddb2388d58ec9339ba0",
+      "path": "decoded/assets/sandbox/host-v2/lib/module-loader.js"
+    },
+    {
+      "member": "assets/sandbox/host-v2/package-service.jsc",
+      "originalBytes": 5020,
+      "originalSha256": "489341cae3a1626eadea012e6a19d49e3f05e7c4b6feb61b42929dde07b33dbc",
+      "decodedBytes": 19088,
+      "decodedSha256": "3edb1ad642ef0b50da5e08174f1740f6e6493c5bf01d02bba5f02731cc077853",
+      "path": "decoded/assets/sandbox/host-v2/package-service.js"
+    },
+    {
+      "member": "assets/sandbox/host-v2/sub-game-host.jsc",
+      "originalBytes": 3324,
+      "originalSha256": "cbad78f0c3d5a1a48bb01291d665b10731bb675bd5fc6cffb7fc3a261d4c3d01",
+      "decodedBytes": 10984,
+      "decodedSha256": "d27585d1172e65dda87b36e5a8d9f7a5136b4f44785a52357106d56dea9409c9",
+      "path": "decoded/assets/sandbox/host-v2/sub-game-host.js"
+    },
+    {
+      "member": "assets/sandbox/host-v2/sub-game-session.jsc",
+      "originalBytes": 4112,
+      "originalSha256": "d0d6e067ca2068cec1836692020917eb5e9d3c98ac42ee92b2378c08f0177eee",
+      "decodedBytes": 14521,
+      "decodedSha256": "ff8243eb23e8950496003d1a7bd4f68e6f342827c30a0ff761c91f2b2aa333b1",
+      "path": "decoded/assets/sandbox/host-v2/sub-game-session.js"
+    },
+    {
+      "member": "assets/src/assets/old/Script/lib/md5.jsc",
+      "originalBytes": 3680,
+      "originalSha256": "7039a165dd027011c14d0850ac74a7364f9f17c48be7f6e86ca53fbc677b605f",
+      "decodedBytes": 9624,
+      "decodedSha256": "f44ec5bb90d84fb51ba0ce58f40753936820647da1dbc20848a869b6685add13",
+      "path": "decoded/assets/src/assets/old/Script/lib/md5.js"
+    },
+    {
+      "member": "assets/src/assets/old/Script/lib/pako.min.jsc",
+      "originalBytes": 14568,
+      "originalSha256": "73f35a7c4aa8c73d7085f573ac76c5ff5560832c1e3d65519a13b50622dda025",
+      "decodedBytes": 46792,
+      "decodedSha256": "9a9a4be1ce756f5c5b1e31655c1092fdd7126de9af560cd61be4aa65f43bf55a",
+      "path": "decoded/assets/src/assets/old/Script/lib/pako.min.js"
+    },
+    {
+      "member": "assets/src/assets/old/Script/polyfill.jsc",
+      "originalBytes": 12972,
+      "originalSha256": "2f2c6fe50fcc34bf88a4690c0a3b994180c32d0b9f27b58d20ec0ae8b574bdbc",
+      "decodedBytes": 58556,
+      "decodedSha256": "9c41a4aaf637e6ab7213e6ebe3d16d33c37bd3a625bd9b28edde83270f0fada0",
+      "path": "decoded/assets/src/assets/old/Script/polyfill.js"
+    },
+    {
+      "member": "assets/src/assets/scripts/AppDefines.jsc",
+      "originalBytes": 476,
+      "originalSha256": "b1fc936dd0a32f2b26bf0a6b5c12e3070d3724caf7f758c3031197c116b7ecfa",
+      "decodedBytes": 854,
+      "decodedSha256": "88420991a07d409643166882f2067c16e471c7a00b3454d2a849533f578b4e10",
+      "path": "decoded/assets/src/assets/scripts/AppDefines.js"
+    },
+    {
+      "member": "assets/src/assets/scripts/cos/cos-js-sdk-v5.jsc",
+      "originalBytes": 66000,
+      "originalSha256": "54c6e74dfd6f697f3dac04378ab7b6f31c4538f7f37702a3d9f4eac4a8584798",
+      "decodedBytes": 294607,
+      "decodedSha256": "bacbb7b3474addabc6c680564b707455243b7062c90f1880265ecf548bf8a1de",
+      "path": "decoded/assets/src/assets/scripts/cos/cos-js-sdk-v5.js"
+    },
+    {
+      "member": "assets/src/cc-polyfill/cc-polyfill.jsc",
+      "originalBytes": 25168,
+      "originalSha256": "e1b18e38afe5d4874f5379a256684e90ba107338ca49d348ac7839b9edef3036",
+      "decodedBytes": 123923,
+      "decodedSha256": "a07de8b5170b0559d5f7bba19fcddf33f9af80c099abfe350842eb70d33de97c",
+      "path": "decoded/assets/src/cc-polyfill/cc-polyfill.js"
+    },
+    {
+      "member": "assets/src/cc-polyfill/cc-qqchess.jsc",
+      "originalBytes": 2152,
+      "originalSha256": "d1173c18818c349ca8486d02ced9b6357c3260985ec79f0d6e6c1301aaa55a9a",
+      "decodedBytes": 5889,
+      "decodedSha256": "d1ced982b76b5ec7bf2239519aa47327d414870dc1d3f0d2077e14715409fb8a",
+      "path": "decoded/assets/src/cc-polyfill/cc-qqchess.js"
+    },
+    {
+      "member": "assets/src/chunks/bundle.jsc",
+      "originalBytes": 1156,
+      "originalSha256": "ae9dd9186bf4f6024cf88ad9639b4e3913a73797d416d8ff351af0be1a531361",
+      "decodedBytes": 2717,
+      "decodedSha256": "84eb1eb5d25ee265fbe97e51a31839a63fd1e1000079835366c5fee3508c2006",
+      "path": "decoded/assets/src/chunks/bundle.js"
+    },
+    {
+      "member": "assets/src/cocos-js/cc.jsc",
+      "originalBytes": 362672,
+      "originalSha256": "635ffefa3257df7b19fad18091bd0e133ea7a61a6f472337c7230a4eb6e3f912",
+      "decodedBytes": 1311024,
+      "decodedSha256": "251532700675f1d7effec341e604a320bf7e42ce5cd566f4e85543a259fc11cb",
+      "path": "decoded/assets/src/cocos-js/cc.js"
+    },
+    {
+      "member": "assets/src/jsb-adapter/engine-adapter.jsc",
+      "originalBytes": 30748,
+      "originalSha256": "305dd453ab0fce8480a06d731be2c93114e142a841ba36c09cf67d9c75893977",
+      "decodedBytes": 169198,
+      "decodedSha256": "4e24660b2071717fa98cc79d6c71503b397991c9390be0051ec928184f0c9e60",
+      "path": "decoded/assets/src/jsb-adapter/engine-adapter.js"
+    },
+    {
+      "member": "assets/src/jsb-adapter/web-adapter.jsc",
+      "originalBytes": 43268,
+      "originalSha256": "19ed1d965d34e6c9fefaf819626cd3b54ca39d236d53918345e1ba5dd8f10f02",
+      "decodedBytes": 173386,
+      "decodedSha256": "295c2d3196950496447ad51294bf669a5f1995ba1dfb34d0de66899d9c24aca1",
+      "path": "decoded/assets/src/jsb-adapter/web-adapter.js"
+    },
+    {
+      "member": "assets/src/system.bundle.jsc",
+      "originalBytes": 3140,
+      "originalSha256": "ab5568282356706ac69e7fff5fc16319ff8f8da34448e6b26f420f3e822bf41a",
+      "decodedBytes": 8319,
+      "decodedSha256": "9e52437715d2e6a8acacb41f1c64d916e4b455d2a9d448f09cecd551dc084b84",
+      "path": "decoded/assets/src/system.bundle.js"
+    }
+  ],
+  "sources": {
+    "h5": {
+      "path": ".runtime/research/tiantian-20261012/analysis-h5/public/assets__scripts__index.2f7fc.js",
+      "url": "https://h5login.qqchess.qq.com/assets/scripts/index.2f7fc.js",
+      "sha256": "e325ae021b522b38baa790446a42cc31e4c24402d12370c60906191be92204a5",
+      "bytes": 12723521
+    },
+    "apk": {
+      "path": ".runtime/research/tiantian-20261012/analysis-native/decoded/assets/assets/scripts/index.js",
+      "url": null,
+      "sha256": "a423474f720218e9febfb558d7c8a95f5b03852032795c7a6b6a9ec2d9501fc7",
+      "bytes": 11189397,
+      "provenance": "Decoded APK script provided by the parallel native-artifact analysis; see analysis-native."
+    }
+  },
+  "sourceLocations": [
+    {
+      "id": "h5.quality-compression",
+      "source": "h5",
+      "module": "chunks:///_virtual/QiPuUtil.ts",
+      "source_byte_start": 9240347,
+      "source_byte_end_exclusive": 9240562,
+      "bytes": 215,
+      "sha256": "54ce6a20ddcb2b1283ac48f9c27e777deb0b8ece16ee7aa9a2e849bc537a49eb"
+    },
+    {
+      "id": "h5.move-quality",
+      "source": "h5",
+      "module": "chunks:///_virtual/QiPuUtil.ts",
+      "source_byte_start": 9240563,
+      "source_byte_end_exclusive": 9240880,
+      "bytes": 317,
+      "sha256": "b6f6c9ce08c7af5e50b82041e6354a525340f34b1cd1fe3a55c026e99e931a16"
+    },
+    {
+      "id": "h5.engine-conversion",
+      "source": "h5",
+      "module": "chunks:///_virtual/AIUtil.ts",
+      "source_byte_start": 690083,
+      "source_byte_end_exclusive": 690356,
+      "bytes": 273,
+      "sha256": "099356972c9218d5827640290b7904f23a0190105181af5736076ce6f78b6367"
+    },
+    {
+      "id": "apk.quality-compression",
+      "source": "apk",
+      "module": "chunks:///_virtual/QiPuUtil.ts",
+      "source_byte_start": 8124714,
+      "source_byte_end_exclusive": 8124924,
+      "bytes": 210,
+      "sha256": "e03001dee2a566f90d0b0378b4c65caad92de0aba68fc0e88f63d4290b6c84ee"
+    },
+    {
+      "id": "apk.move-quality",
+      "source": "apk",
+      "module": "chunks:///_virtual/QiPuUtil.ts",
+      "source_byte_start": 8124924,
+      "source_byte_end_exclusive": 8125245,
+      "bytes": 321,
+      "sha256": "a14976e419f3751bc04960d7c607d8695c7c8c190b30fe5c1d8b6c450a50b913"
+    },
+    {
+      "id": "apk.engine-conversion",
+      "source": "apk",
+      "module": "chunks:///_virtual/AIUtil.ts",
+      "source_byte_start": 642271,
+      "source_byte_end_exclusive": 642540,
+      "bytes": 269,
+      "sha256": "e3b567cf0903071a34559fb03ca2231e079b5cca2e00a9f3011431a380f9fae2"
+    },
+    {
+      "id": "h5.aggregate",
+      "source": "h5",
+      "module": "chunks:///_virtual/AIUtil.ts",
+      "source_byte_start": 685904,
+      "source_byte_end_exclusive": 687461,
+      "bytes": 1557,
+      "sha256": "7777bfe7fb9e447ca6612eeead469999fdb79c2d6c6fcc67f93fa11bca6f2987"
+    },
+    {
+      "id": "h5.mean",
+      "source": "h5",
+      "module": "chunks:///_virtual/AIUtil.ts",
+      "source_byte_start": 689481,
+      "source_byte_end_exclusive": 689601,
+      "bytes": 120,
+      "sha256": "7a414adbbfed09a13eb74656845094f8beecba66c3574b92c529ca05bb26f72e"
+    },
+    {
+      "id": "h5.report-route",
+      "source": "h5",
+      "module": "chunks:///_virtual/QipuReplayChessboardControl.ts",
+      "source_byte_start": 9155999,
+      "source_byte_end_exclusive": 9157349,
+      "bytes": 1350,
+      "sha256": "3f7f6bc1797c3ea94731dd939424c8797ef3366a6939c32a74a2c5f02dcb3abf"
+    },
+    {
+      "id": "h5.endgame-cutoff",
+      "source": "h5",
+      "module": "chunks:///_virtual/QipuReplayChessboardControl.ts",
+      "source_byte_start": 9158832,
+      "source_byte_end_exclusive": 9158965,
+      "bytes": 133,
+      "sha256": "388126aa7d3f4abdc47794e895a4e0538e28790b50f33e05dff7bd0eb5d77d0f"
+    },
+    {
+      "id": "h5.postmove-fens",
+      "source": "h5",
+      "module": "chunks:///_virtual/QipuReplayChessboardControl.ts",
+      "source_byte_start": 9158966,
+      "source_byte_end_exclusive": 9159276,
+      "bytes": 310,
+      "sha256": "7b87f09a74dc7ca3ba714fb246c2ea3f245a45760e71a4df6ce381c44052bfba"
+    },
+    {
+      "id": "h5.cutoff-getter",
+      "source": "h5",
+      "module": "chunks:///_virtual/QipuReplayChessboardControl.ts",
+      "source_byte_start": 9177189,
+      "source_byte_end_exclusive": 9177226,
+      "bytes": 37,
+      "sha256": "bed8f77f24884842fc9576d121c958a9197ce46433d60c5f7aba287f8eb867e7"
+    },
+    {
+      "id": "h5.endgame-fen",
+      "source": "h5",
+      "module": "chunks:///_virtual/QiPuUtil.ts",
+      "source_byte_start": 9249182,
+      "source_byte_end_exclusive": 9249226,
+      "bytes": 44,
+      "sha256": "ec57d4a114e8e3271e107fb05b3dc21961e8859a27f1c27fd8728c6379229d79"
+    },
+    {
+      "id": "h5.endgame-material",
+      "source": "h5",
+      "module": "chunks:///_virtual/QiPuUtil.ts",
+      "source_byte_start": 9249227,
+      "source_byte_end_exclusive": 9249470,
+      "bytes": 243,
+      "sha256": "9575815bc5ae006819bc6e22fb8620b009673baf6dd68ca89b0046ca5328ccf0"
+    },
+    {
+      "id": "h5.review-grade",
+      "source": "h5",
+      "module": "chunks:///_virtual/QiPuUtil.ts",
+      "source_byte_start": 9247730,
+      "source_byte_end_exclusive": 9247832,
+      "bytes": 102,
+      "sha256": "94899f3e2ee57723e7ff161e1b625796592c9251a30a2737d1ab00976c08efa6"
+    },
+    {
+      "id": "h5.pve-grade",
+      "source": "h5",
+      "module": "chunks:///_virtual/QiPuUtil.ts",
+      "source_byte_start": 9247833,
+      "source_byte_end_exclusive": 9247908,
+      "bytes": 75,
+      "sha256": "9a1a9d819399cce304c8f3b19458a03a3a1be9aea12698ea0c660a02c395df67"
+    },
+    {
+      "id": "h5.pve-grade-caller",
+      "source": "h5",
+      "module": "chunks:///_virtual/PveChessBoardControl.ts",
+      "source_byte_start": 7597973,
+      "source_byte_end_exclusive": 7598198,
+      "bytes": 225,
+      "sha256": "ff10f2dc2a9c37e082fcf0111fc7c0c34a4abf60af48a1aaba662e3bc5db3ce8"
+    },
+    {
+      "id": "h5.piece-enum",
+      "source": "h5",
+      "module": "chunks:///_virtual/ChessManUtils.ts",
+      "source_byte_start": 1931694,
+      "source_byte_end_exclusive": 1932053,
+      "bytes": 359,
+      "sha256": "439942d9d9380cf7ea8d113c4300c90a75ba52cae29494d715f0712af0f94ae1"
+    },
+    {
+      "id": "h5.permove-public-display",
+      "source": "h5",
+      "module": "chunks:///_virtual/QipuAiResultPanel.ts",
+      "source_byte_start": 8126661,
+      "source_byte_end_exclusive": 8127776,
+      "bytes": 1115,
+      "sha256": "9669654ffa57838e8eb3820827085a6dd40b9bfb223a69e2bcd17e1dd4c4c25f"
+    },
+    {
+      "id": "apk.aggregate",
+      "source": "apk",
+      "module": "chunks:///_virtual/AIUtil.ts",
+      "source_byte_start": 638050,
+      "source_byte_end_exclusive": 639631,
+      "bytes": 1581,
+      "sha256": "d5fe429bdf08020b5b06bb3760ff173937bde5f363f1610ff63312b4fca0e74b"
+    },
+    {
+      "id": "apk.mean",
+      "source": "apk",
+      "module": "chunks:///_virtual/AIUtil.ts",
+      "source_byte_start": 641668,
+      "source_byte_end_exclusive": 641769,
+      "bytes": 101,
+      "sha256": "e1de56cdfe84b280d5c1f8bbe6ad363d157eb8ec887c3972bf06adf3b815a61f"
+    },
+    {
+      "id": "apk.endgame-cutoff",
+      "source": "apk",
+      "module": "chunks:///_virtual/QipuReplayChessboardControl.ts",
+      "source_byte_start": 8052756,
+      "source_byte_end_exclusive": 8052871,
+      "bytes": 115,
+      "sha256": "a6745820f52bb7f59121ca9db56a0cf62d40cb23f4b35a019bce0ab863d57d4c"
+    },
+    {
+      "id": "apk.postmove-fens",
+      "source": "apk",
+      "module": "chunks:///_virtual/QipuReplayChessboardControl.ts",
+      "source_byte_start": 8052871,
+      "source_byte_end_exclusive": 8053144,
+      "bytes": 273,
+      "sha256": "36c6338a63507f272af30e40f65b373cef14fa471f93c2296e78624260ae7ce9"
+    },
+    {
+      "id": "apk.cutoff-getter",
+      "source": "apk",
+      "module": "chunks:///_virtual/QipuReplayChessboardControl.ts",
+      "source_byte_start": 8067663,
+      "source_byte_end_exclusive": 8067687,
+      "bytes": 24,
+      "sha256": "ff5577361467e00b526b589d474ddc9e8b6c0a29c2b80f1cba2499e9896ea708"
+    },
+    {
+      "id": "apk.endgame-fen",
+      "source": "apk",
+      "module": "chunks:///_virtual/QiPuUtil.ts",
+      "source_byte_start": 8133078,
+      "source_byte_end_exclusive": 8133117,
+      "bytes": 39,
+      "sha256": "1e1c04f1d1391689c96a46fdec1fe5cfa310ced3e1e09c9e6ff9fe44c6e5ed02"
+    },
+    {
+      "id": "apk.endgame-material",
+      "source": "apk",
+      "module": "chunks:///_virtual/QiPuUtil.ts",
+      "source_byte_start": 8133117,
+      "source_byte_end_exclusive": 8133358,
+      "bytes": 241,
+      "sha256": "9d3d737cd9d91bf76f92fb4574c145f31a67650b041ab33fb36ff2fceeb7faf6"
+    },
+    {
+      "id": "apk.review-grade",
+      "source": "apk",
+      "module": "chunks:///_virtual/QiPuUtil.ts",
+      "source_byte_start": 8131701,
+      "source_byte_end_exclusive": 8131797,
+      "bytes": 96,
+      "sha256": "f4f00c551954cbecfd1da9dce5def97052198b646469a9d3ba0b9fb05288063f"
+    },
+    {
+      "id": "apk.pve-grade",
+      "source": "apk",
+      "module": "chunks:///_virtual/QiPuUtil.ts",
+      "source_byte_start": 8131797,
+      "source_byte_end_exclusive": 8131882,
+      "bytes": 85,
+      "sha256": "5bb947fc19ac139090a8dda113a5d911d26419dfbc7337788f5a3f330644319e"
+    },
+    {
+      "id": "apk.pve-grade-caller",
+      "source": "apk",
+      "module": "chunks:///_virtual/PveChessBoardControl.ts",
+      "source_byte_start": 6679020,
+      "source_byte_end_exclusive": 6679215,
+      "bytes": 195,
+      "sha256": "9b6a052a065794f57c22eaa344db13e5a8da099622a46029dbd10198c3afd992"
+    },
+    {
+      "id": "apk.piece-enum",
+      "source": "apk",
+      "module": "chunks:///_virtual/ChessManUtils.ts",
+      "source_byte_start": 1726712,
+      "source_byte_end_exclusive": 1727068,
+      "bytes": 356,
+      "sha256": "2797dabbe64779b3d1ead1486364a5b8426fd77878783b8f2c7c4a1716661a22"
+    },
+    {
+      "id": "h5.review-grade-labels",
+      "source": "h5",
+      "module": "chunks:///_virtual/QipuReplayChessboardControl.ts",
+      "source_byte_start": 9163601,
+      "source_byte_end_exclusive": 9163956,
+      "bytes": 355,
+      "sha256": "fedebfecf2b03143264b9c781281bade6008eb2144e9731123eb7224024c89ba"
+    },
+    {
+      "id": "apk.review-grade-labels",
+      "source": "apk",
+      "module": "chunks:///_virtual/QipuReplayChessboardControl.ts",
+      "source_byte_start": 8056207,
+      "source_byte_end_exclusive": 8056536,
+      "bytes": 329,
+      "sha256": "16c0438f5ddbdced14663a446597c7431f8e3d20cd5013d35a3f940196eb6c83"
+    },
+    {
+      "id": "h5.report-display-clamp",
+      "source": "h5",
+      "module": "chunks:///_virtual/QipuAiReportPanel.ts",
+      "source_byte_start": 8117866,
+      "source_byte_end_exclusive": 8118596,
+      "bytes": 730,
+      "sha256": "224ad3391e26a3ba27310858268e9f1b8967aaee5259e9db07274649c8bf7983"
+    },
+    {
+      "id": "apk.report-display-clamp",
+      "source": "apk",
+      "module": "chunks:///_virtual/QipuAiReportPanel.ts",
+      "source_byte_start": 7135759,
+      "source_byte_end_exclusive": 7136461,
+      "bytes": 702,
+      "sha256": "897ac85368a922ef39335d25e0db599b79ffc0c7426b28136ccbc1b0f1aee95f"
+    },
+    {
+      "id": "apk.report-route",
+      "source": "apk",
+      "module": "chunks:///_virtual/QipuReplayChessboardControl.ts",
+      "source_byte_start": 8050374,
+      "source_byte_end_exclusive": 8050602,
+      "bytes": 228,
+      "sha256": "ef3f98cf890fde2097fe89b2e6d5f05b2b77148742d18873970142afc015b758"
+    }
+  ],
+  "formulaComparison": [
+    {
+      "pair": "quality-compression",
+      "status": "IDENTICAL_EXPRESSIONS_AFTER_LOCAL_RENAMING_AND_WHITESPACE_REMOVAL"
+    },
+    {
+      "pair": "engine-conversion",
+      "status": "IDENTICAL_EXPRESSIONS_AFTER_LOCAL_RENAMING_AND_WHITESPACE_REMOVAL"
+    },
+    {
+      "pair": "move-quality",
+      "status": "MANUALLY_VERIFIED_SAME_BRANCH_CONDITIONS_AND_RETURN_VALUES",
+      "details": [
+        "Both negate pre/post score for side==2 before any other test.",
+        "Both return 100 immediately for post score==30000 or post score==-30000; APK writes then returns a local variable whereas H5 returns 100 directly.",
+        "Both subtract exactly matching compression functions, then interpolate at loss<=0,30,60,120,180,240 with identical arithmetic.",
+        "Both loss>240 branches assign score=-100*(loss-240)/240, clamp below -300, then return score; syntax differs only in comma-expression placement."
+      ],
+      "boundary": "Static equivalence audit only; the separate numeric oracle validates product behavior."
+    }
+  ],
+  "actualConfig": {
+    "member": "assets/res/embedRes/common_config_data.bin",
+    "bytes": 1088546,
+    "sha256": "3600652dcea00159b7177a2c94f63b2a31da0198022fb27dbccefccf811cfef8",
+    "consumed_bytes": 999012,
+    "zero_padding_bytes": 89534,
+    "root_struct": "QQChessClientConfig.TConfData",
+    "decoded_root_fields": 150,
+    "decoded_nodes": 151177,
+    "unknown_fields": []
+  },
+  "configConclusions": [
+    "The embedded common_config_data.bin is actual JCE TConfData values, not only a schema. All 150 root fields and 151177 decoded nodes matched known fields; 89534 trailing bytes are zero padding.",
+    "CommonDataModel.uNc reads analyse_result_desc, sorts maxScore ascending, chooses the first upper bound where input score <= maxScore, and randomly chooses one phrase in that row. OverAnalyseResultComponet passes the aggregate result pbc/cUb. This is a game-report phrase table, not move quality thresholds.",
+    "QiJiCheckBase.Ira uses inclusive lower and upper bounds of vecJudgingScoreRange.",
+    "SCQiPuShiWu 8502 feeds JY(previous,current,color), clamps negative to zero, then checks the configured [0,40]. It therefore tags move-quality scores <=40 as a chess-trace fault in this shipped client/config combination.",
+    "SCDaShiWu 8001 instead feeds a side-oriented previous-current position score difference to [500,99999]. It is a distinct large-error chess-trace tag, not the same quantity as JY move score.",
+    "SCWanMeiKaiJu 8004 uses Spb=5, checks exactly step 9 or 10, visits five own plies, and rejects a positive side-oriented loss outside [0,50]. This is a perfect-opening tag condition, not the whole-report opening/middlegame split.",
+    "qipu_analyse_ai_ex_depth is shipped as 25. QipuReplayChessboardControl.lNc uses that setting only when aIb is true, otherwise another default; this is search depth, not a scoring threshold."
+  ],
+  "configLimits": [
+    "This embedded fallback config cannot establish current server-hot-updated values or online server formulas.",
+    "stExerciseLibConf maps and mKValueConf are empty; no exercise rating formula can be recovered from those values.",
+    "stQipuLayoutConf contains an empty vQipuLayoutConf and iUpdateTime zero; it does not establish a phase boundary.",
+    "No JY piecewise thresholds or report phase boundaries were identified as configuration fields in this investigation. Those require decoded code call-chain evidence collected separately by the parent and UI agent.",
+    "game_analyse_tips describes position-evaluation ranges; it must not be reused as 0-100 move-quality thresholds.",
+    "The Const.ts strings analyse_show_best_max_score/analyse_show_error_min_score are present, but no matching embedded map keys or use sites beyond their exports were found in the decoded main bundle; the strings alone establish no active threshold."
+  ],
+  "numericalOracle": {
+    "file": "2026-10-12-tiantian-score-fixtures.json",
+    "sha256": "10308a711cd98eea702563160fa31ed51754a8ea2f6d81a540e93058b25b1e11",
+    "vectors": {
+      "compression": 33,
+      "engineScore": 36,
+      "moveQuality": 39,
+      "reviewFlow": 9,
+      "parser": 8
+    },
+    "productScoringVectors": 117
+  },
+  "rea": {
+    "javascriptParentEvidenceId": "ev_a0b1291c02a8a25d9ec442b2431dcaf7fbbc5654202f154ed25c5df5dca2c74d",
+    "summaryEvidenceId": "ev_b10f5b7a665e43e5d0867a7f29a7642e5782908de27fda07246d96090bc79e7c",
+    "parsedModules": 8,
+    "limitations": [
+      "Native search_strings provider timeout 330000 ms",
+      "AIManager.ts.js semantic worker heap exhaustion; partial static graph",
+      "No runtime or server equivalence established"
+    ],
+    "sessionClosed": true
+  },
+  "initialVerificationFailure": {
+    "case": "compression outside negative domain",
+    "observed": "independent implementation returned -0 while source returned +0",
+    "resolution": "preserve source subtraction sign semantics; all fixed numerical fixtures passed after repair"
+  },
+  "excludedFromDistribution": [
+    "APK",
+    "decoded business source",
+    "XXTEA materials",
+    "Tencent engine and weights"
+  ],
+  "preservedLocalDifferences": [
+    "same-root equal-budget engine comparison",
+    "strict UCI parsing",
+    "bound and unverified-mate guards",
+    "real zero displayed instead of hidden",
+    "existing reference score chart",
+    "local training Elo and stars"
+  ]
+}

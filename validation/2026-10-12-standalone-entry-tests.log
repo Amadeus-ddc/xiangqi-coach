@@ -1,0 +1,13 @@
+✔ stdio entry starts from an absolute symlink path, including a directory with spaces (115.417041ms)
+✔ engine setup entry executes from an absolute symlink path (61.018375ms)
+✔ engine setup verifies downloads and reuses only a matching cache (10.659208ms)
+✔ a tampered download never replaces an existing engine (1.479292ms)
+✔ an unsupported architecture is rejected before downloading (0.585666ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 282.66925

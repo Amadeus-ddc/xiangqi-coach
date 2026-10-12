@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "xiangqi-coach": {
+      "command": "node",
+      "args": ["./server/main.mjs", "--stdio"],
+      "cwd": "./"
+    }
+  }
+}

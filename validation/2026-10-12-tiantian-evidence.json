@@ -1,0 +1,804 @@
+{
+  "date": "2026-10-12",
+  "source": {
+    "store_url": "https://sj.qq.com/appdetail/com.tencent.qqgame.xq",
+    "download_url": "https://imtt2.dd.qq.com/sjy.00008/sjy.00001/16891/apk/99B32B44E4176F9157EA72B34A2E0758.apk?fsname=com.tencent.qqgame.xq_404060022.apk",
+    "retrieved_at": "2026-10-12",
+    "purpose": "static feature investigation",
+    "final_url": "https://imtt2.dd.qq.com/sjy.00008/sjy.00001/16891/apk/99B32B44E4176F9157EA72B34A2E0758.apk?fsname=com.tencent.qqgame.xq_404060022.apk",
+    "sha256": "f1f86c38d3a34e1fe5c7c2d2f8939eb2284c873e3bcfe615e43b3d00a80682c0",
+    "bytes": 198465378
+  },
+  "manifest": {
+    "package": "com.tencent.qqgame.xq",
+    "versionName": "4.4.6.2",
+    "versionCode": 404060022,
+    "signatureVerified": false
+  },
+  "reaEvidenceIds": [
+    "ev_8bb6d6e1d4f41dc6ab577a6ad5c458c2c1dd060f766bc7faa2f668f54dbcdf0a",
+    "ev_d25a874d8559c7fe57b0099a6b63b2c7bb432db6eb24541b120ebb4f6fba5665",
+    "ev_fa24b6c3796bb9d9f1be8a2f3c2bc2a14c281aece8be2019e210007763925045"
+  ],
+  "contracts": [
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/04/046c233c-34fb-47dc-bcfc-5fb9b3de3200.bin",
+      "member_sha256": "6a268a88b537842da09352074af0daf9884715ace9b845f054160a17f94129d7",
+      "json_range": {
+        "offset": 24,
+        "bytes": 236374
+      },
+      "json_pointer": "/enums/E_CT_GAME_SCORE_LEVEL",
+      "field_names_or_enum": {
+        "E_CT_GAME_SCORE_LEVEL_INVALID": 0,
+        "E_CT_GAME_SCORE_LEVEL_EXCELLENT": 1,
+        "E_CT_GAME_SCORE_LEVEL_GOOD": 2,
+        "E_CT_GAME_SCORE_LEVEL_AVERAGE": 3,
+        "E_CT_GAME_SCORE_LEVEL_POOR": 4,
+        "E_CT_GAME_SCORE_LEVEL_MISTAKE": 5
+      }
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/04/046c233c-34fb-47dc-bcfc-5fb9b3de3200.bin",
+      "member_sha256": "6a268a88b537842da09352074af0daf9884715ace9b845f054160a17f94129d7",
+      "json_range": {
+        "offset": 24,
+        "bytes": 236374
+      },
+      "json_pointer": "/enums/E_CT_GAME_SITUATION_TYPE",
+      "field_names_or_enum": {
+        "E_CT_GAME_SITUATION_TYPE_INVALID": 0,
+        "E_CT_GAME_SITUATION_TYPE_MIDDLE_EXCELLENT": 1,
+        "E_CT_GAME_SITUATION_TYPE_MIDDLE_MISTAKE": 2,
+        "E_CT_GAME_SITUATION_TYPE_ENDING_EXCELLENT": 3,
+        "E_CT_GAME_SITUATION_TYPE_ENDING_MISTAKE": 4,
+        "E_CT_GAME_SITUATION_TYPE_OMITTED_KILLING_MISTAKE": 5,
+        "E_CT_GAME_SITUATION_TYPE_OPENING_EXCELLENT": 6,
+        "E_CT_GAME_SITUATION_TYPE_OPENING_MISTAKE": 7
+      }
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/04/046c233c-34fb-47dc-bcfc-5fb9b3de3200.bin",
+      "member_sha256": "6a268a88b537842da09352074af0daf9884715ace9b845f054160a17f94129d7",
+      "json_range": {
+        "offset": 24,
+        "bytes": 236374
+      },
+      "json_pointer": "/enums/E_CT_ENDING_SITUATION_TYPE",
+      "field_names_or_enum": {
+        "E_CT_ENDING_SITUATION_TYPE_INVALID": 0,
+        "E_CT_ENDING_SITUATION_TYPE_JUBING": 1,
+        "E_CT_ENDING_SITUATION_TYPE_PAOBING": 2,
+        "E_CT_ENDING_SITUATION_TYPE_MABING": 3,
+        "E_CT_ENDING_SITUATION_TYPE_JUPAOBING": 4,
+        "E_CT_ENDING_SITUATION_TYPE_JUMABING": 5,
+        "E_CT_ENDING_SITUATION_TYPE_MAPAOBING": 6,
+        "E_CT_ENDING_SITUATION_TYPE_BING": 7
+      }
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/04/046c233c-34fb-47dc-bcfc-5fb9b3de3200.bin",
+      "member_sha256": "6a268a88b537842da09352074af0daf9884715ace9b845f054160a17f94129d7",
+      "json_range": {
+        "offset": 24,
+        "bytes": 236374
+      },
+      "json_pointer": "/enums/E_EXERCISE_CHALLENGE_TYPE",
+      "field_names_or_enum": {
+        "E_EXERCISE_CHALLENGE_3_MIN": 1,
+        "E_EXERCISE_CHALLENGE_5_MIN": 2,
+        "E_EXERCISE_CHALLENGE_UNLIMITED_MIN": 3
+      }
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/04/046c233c-34fb-47dc-bcfc-5fb9b3de3200.bin",
+      "member_sha256": "6a268a88b537842da09352074af0daf9884715ace9b845f054160a17f94129d7",
+      "json_range": {
+        "offset": 24,
+        "bytes": 236374
+      },
+      "json_pointer": "/structs/TExerciseChallengeData",
+      "field_names_or_enum": [
+        "iBestScore",
+        "iBestScoreTimeStamp"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/04/046c233c-34fb-47dc-bcfc-5fb9b3de3200.bin",
+      "member_sha256": "6a268a88b537842da09352074af0daf9884715ace9b845f054160a17f94129d7",
+      "json_range": {
+        "offset": 24,
+        "bytes": 236374
+      },
+      "json_pointer": "/structs/TExerciseChallengeResult",
+      "field_names_or_enum": [
+        "iExerciseID",
+        "iIsPass",
+        "uTime",
+        "iExerciseScore"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/04/046c233c-34fb-47dc-bcfc-5fb9b3de3200.bin",
+      "member_sha256": "6a268a88b537842da09352074af0daf9884715ace9b845f054160a17f94129d7",
+      "json_range": {
+        "offset": 24,
+        "bytes": 236374
+      },
+      "json_pointer": "/structs/TUserExerciseChallengeData",
+      "field_names_or_enum": [
+        "stDayExerciseChallengeData",
+        "stWeekExerciseChallengeData",
+        "stHistoryExerciseChallengeData"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/04/046c233c-34fb-47dc-bcfc-5fb9b3de3200.bin",
+      "member_sha256": "6a268a88b537842da09352074af0daf9884715ace9b845f054160a17f94129d7",
+      "json_range": {
+        "offset": 24,
+        "bytes": 236374
+      },
+      "json_pointer": "/structs/TUserExerciseChallengeRecord",
+      "field_names_or_enum": [
+        "iChallengeStartTimeStamp",
+        "iMaxContinuousRight",
+        "iMaxScore",
+        "iAllTime",
+        "vTExerciseChallengeSimpleData",
+        "iAllPassCount"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/04/046c233c-34fb-47dc-bcfc-5fb9b3de3200.bin",
+      "member_sha256": "6a268a88b537842da09352074af0daf9884715ace9b845f054160a17f94129d7",
+      "json_range": {
+        "offset": 24,
+        "bytes": 236374
+      },
+      "json_pointer": "/structs/TCTGameOverview",
+      "field_names_or_enum": [
+        "stMyAbility",
+        "stAverageAbility",
+        "iOpeningLayoutType",
+        "vecFunctionID",
+        "iMyAllRoundScore",
+        "sMyAllRoundRating",
+        "iNewMyAllRoundScore"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/04/046c233c-34fb-47dc-bcfc-5fb9b3de3200.bin",
+      "member_sha256": "6a268a88b537842da09352074af0daf9884715ace9b845f054160a17f94129d7",
+      "json_range": {
+        "offset": 24,
+        "bytes": 236374
+      },
+      "json_pointer": "/structs/TCTAllRoundAbility",
+      "field_names_or_enum": [
+        "iOpeningScore",
+        "iMiddleScore",
+        "iEndingScore",
+        "iJiangKillingScore",
+        "iGameTimeScore",
+        "iMentalityScore",
+        "iMiddleEndingScore",
+        "iStepAccuracyScore",
+        "iOpponentMoveScore",
+        "iOpponentOpeningScore"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/04/046c233c-34fb-47dc-bcfc-5fb9b3de3200.bin",
+      "member_sha256": "6a268a88b537842da09352074af0daf9884715ace9b845f054160a17f94129d7",
+      "json_range": {
+        "offset": 24,
+        "bytes": 236374
+      },
+      "json_pointer": "/structs/TCTGameFunctionState",
+      "field_names_or_enum": [
+        "iStepCount",
+        "stFen",
+        "iUpdateTime",
+        "vecSituationType",
+        "iEndingCategory",
+        "iJiangKillingCategory",
+        "vecFunctionID"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/04/046c233c-34fb-47dc-bcfc-5fb9b3de3200.bin",
+      "member_sha256": "6a268a88b537842da09352074af0daf9884715ace9b845f054160a17f94129d7",
+      "json_range": {
+        "offset": 24,
+        "bytes": 236374
+      },
+      "json_pointer": "/structs/TCTExercisesItem",
+      "field_names_or_enum": [
+        "sID",
+        "iStatus",
+        "stFen",
+        "iOmittedKillingType",
+        "iSituationScore",
+        "sBestMove",
+        "sPv",
+        "vecPv"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/04/046c233c-34fb-47dc-bcfc-5fb9b3de3200.bin",
+      "member_sha256": "6a268a88b537842da09352074af0daf9884715ace9b845f054160a17f94129d7",
+      "json_range": {
+        "offset": 24,
+        "bytes": 236374
+      },
+      "json_pointer": "/structs/TQipuAnalysisCtrlParam",
+      "field_names_or_enum": [
+        "iDepth",
+        "iMaxTimespan"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/04/046c233c-34fb-47dc-bcfc-5fb9b3de3200.bin",
+      "member_sha256": "6a268a88b537842da09352074af0daf9884715ace9b845f054160a17f94129d7",
+      "json_range": {
+        "offset": 24,
+        "bytes": 236374
+      },
+      "json_pointer": "/structs/TQipuAnalysisResult",
+      "field_names_or_enum": [
+        "iStep",
+        "sAnalysisRawData",
+        "iSituationScore",
+        "vecPv"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/ab/ab716834-255d-4b7b-b84a-380cac29d011.bin",
+      "member_sha256": "5cd78d5ac30fd3188c9749d84288913757dea687f9ce30606d7458fa3b12e564",
+      "json_range": {
+        "offset": 24,
+        "bytes": 486866
+      },
+      "json_pointer": "/structs/AnalyseMoveInfo",
+      "field_names_or_enum": [
+        "iStep",
+        "bestMove",
+        "iFenScore",
+        "iMoveScore",
+        "bBook",
+        "stComment"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/ab/ab716834-255d-4b7b-b84a-380cac29d011.bin",
+      "member_sha256": "5cd78d5ac30fd3188c9749d84288913757dea687f9ce30606d7458fa3b12e564",
+      "json_range": {
+        "offset": 24,
+        "bytes": 486866
+      },
+      "json_pointer": "/structs/TAnalyseReportReq",
+      "field_names_or_enum": [
+        "sKey",
+        "stAiSvrInfo"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/ab/ab716834-255d-4b7b-b84a-380cac29d011.bin",
+      "member_sha256": "5cd78d5ac30fd3188c9749d84288913757dea687f9ce30606d7458fa3b12e564",
+      "json_range": {
+        "offset": 24,
+        "bytes": 486866
+      },
+      "json_pointer": "/structs/AnalyseReportInfo",
+      "field_names_or_enum": [
+        "iTotalScore",
+        "iOpenScore",
+        "iMidScore",
+        "iEndScore",
+        "iBookMove",
+        "iLostKill",
+        "vFaultInfos",
+        "sDesc",
+        "vLostKill",
+        "iTotalScore_op",
+        "iOpenScore_op",
+        "iMidScore_op",
+        "iEndScore_op",
+        "iMidMoveStep",
+        "iMingCnt",
+        "iMingMatchCnt",
+        "iMingMatchRate",
+        "iDarkCnt",
+        "iDarkMatchCnt",
+        "iDarkMatchRate",
+        "iMingCnt_op",
+        "iMingMatchCnt_op",
+        "iMingMatchRate_op",
+        "iDarkCnt_op",
+        "iDarkMatchCnt_op",
+        "iDarkMatchRate_op"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/ab/ab716834-255d-4b7b-b84a-380cac29d011.bin",
+      "member_sha256": "5cd78d5ac30fd3188c9749d84288913757dea687f9ce30606d7458fa3b12e564",
+      "json_range": {
+        "offset": 24,
+        "bytes": 486866
+      },
+      "json_pointer": "/structs/TAnalyseReportRsp",
+      "field_names_or_enum": [
+        "common",
+        "sKey",
+        "vMoveInfos",
+        "vReportInfos"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/ab/ab716834-255d-4b7b-b84a-380cac29d011.bin",
+      "member_sha256": "5cd78d5ac30fd3188c9749d84288913757dea687f9ce30606d7458fa3b12e564",
+      "json_range": {
+        "offset": 24,
+        "bytes": 486866
+      },
+      "json_pointer": "/structs/TExerciseRatingResultReq",
+      "field_names_or_enum": [
+        "iExerciseID",
+        "iUserRound",
+        "iUserTime",
+        "isPass",
+        "isRevive",
+        "isPassByPoint",
+        "iUserCurHp"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/ab/ab716834-255d-4b7b-b84a-380cac29d011.bin",
+      "member_sha256": "5cd78d5ac30fd3188c9749d84288913757dea687f9ce30606d7458fa3b12e564",
+      "json_range": {
+        "offset": 24,
+        "bytes": 486866
+      },
+      "json_pointer": "/structs/TExerciseRatingResultRsp",
+      "field_names_or_enum": [
+        "iResult",
+        "iExerciseID",
+        "iPassRate",
+        "iTargetTime",
+        "iUserRateChange",
+        "iUserRate",
+        "iAttempts",
+        "iExerciseRate",
+        "iUserTime",
+        "iUserCurHp",
+        "iExerciseHp",
+        "iMaxRevive",
+        "iUserCurRevive",
+        "sMsg"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/ab/ab716834-255d-4b7b-b84a-380cac29d011.bin",
+      "member_sha256": "5cd78d5ac30fd3188c9749d84288913757dea687f9ce30606d7458fa3b12e564",
+      "json_range": {
+        "offset": 24,
+        "bytes": 486866
+      },
+      "json_pointer": "/structs/TExerciseLearningResultReq",
+      "field_names_or_enum": [
+        "iExerciseID",
+        "iGrade",
+        "iExerciseLearningType"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/ab/ab716834-255d-4b7b-b84a-380cac29d011.bin",
+      "member_sha256": "5cd78d5ac30fd3188c9749d84288913757dea687f9ce30606d7458fa3b12e564",
+      "json_range": {
+        "offset": 24,
+        "bytes": 486866
+      },
+      "json_pointer": "/structs/TExerciseLearningResultRsp",
+      "field_names_or_enum": [
+        "iResult",
+        "vTSimpleExerciseLearningCategory",
+        "iExerciseScore",
+        "iThumbsDown",
+        "iThumbsUp",
+        "iGrade",
+        "iExerciseID"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/ab/ab716834-255d-4b7b-b84a-380cac29d011.bin",
+      "member_sha256": "5cd78d5ac30fd3188c9749d84288913757dea687f9ce30606d7458fa3b12e564",
+      "json_range": {
+        "offset": 24,
+        "bytes": 486866
+      },
+      "json_pointer": "/structs/TExerciseGetRateReq",
+      "field_names_or_enum": [
+        "stUserID",
+        "sSeq"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/ab/ab716834-255d-4b7b-b84a-380cac29d011.bin",
+      "member_sha256": "5cd78d5ac30fd3188c9749d84288913757dea687f9ce30606d7458fa3b12e564",
+      "json_range": {
+        "offset": 24,
+        "bytes": 486866
+      },
+      "json_pointer": "/structs/TExerciseGetRateRsp",
+      "field_names_or_enum": [
+        "iResult",
+        "iUserRatePoint",
+        "stSimpleExerciseLearning",
+        "sMsg"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/ab/ab716834-255d-4b7b-b84a-380cac29d011.bin",
+      "member_sha256": "5cd78d5ac30fd3188c9749d84288913757dea687f9ce30606d7458fa3b12e564",
+      "json_range": {
+        "offset": 24,
+        "bytes": 486866
+      },
+      "json_pointer": "/structs/TExerciseGetLearningReq",
+      "field_names_or_enum": [
+        "iExerciseLearningType",
+        "vExercsieType",
+        "iMinExerciseScore",
+        "iMaxExerciseScore",
+        "iPos",
+        "vLastLearningId"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/ab/ab716834-255d-4b7b-b84a-380cac29d011.bin",
+      "member_sha256": "5cd78d5ac30fd3188c9749d84288913757dea687f9ce30606d7458fa3b12e564",
+      "json_range": {
+        "offset": 24,
+        "bytes": 486866
+      },
+      "json_pointer": "/structs/TExerciseGetLearningRsp",
+      "field_names_or_enum": [
+        "iResult",
+        "vTSimpleExerciseLearning",
+        "vExerciseID",
+        "iPos",
+        "sMsg",
+        "iExerciseLearningType"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/ab/ab716834-255d-4b7b-b84a-380cac29d011.bin",
+      "member_sha256": "5cd78d5ac30fd3188c9749d84288913757dea687f9ce30606d7458fa3b12e564",
+      "json_range": {
+        "offset": 24,
+        "bytes": 486866
+      },
+      "json_pointer": "/structs/TSimpleExerciseLearning",
+      "field_names_or_enum": [
+        "iExerciseID",
+        "sExercise",
+        "vExerciseSolution",
+        "iTargetTime",
+        "iLimitRound",
+        "iExerciseScore",
+        "vtSimpleExerciseLearningCategory",
+        "iSettlementType",
+        "iAllowedRound",
+        "iExerciseHp",
+        "iPassCond"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/ab/ab716834-255d-4b7b-b84a-380cac29d011.bin",
+      "member_sha256": "5cd78d5ac30fd3188c9749d84288913757dea687f9ce30606d7458fa3b12e564",
+      "json_range": {
+        "offset": 24,
+        "bytes": 486866
+      },
+      "json_pointer": "/structs/TSimpleExerciseLearningCategory",
+      "field_names_or_enum": [
+        "iSecondId",
+        "iMainId",
+        "iAcc",
+        "sCategoryName",
+        "iPassCount",
+        "iFailCount"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/ab/ab716834-255d-4b7b-b84a-380cac29d011.bin",
+      "member_sha256": "5cd78d5ac30fd3188c9749d84288913757dea687f9ce30606d7458fa3b12e564",
+      "json_range": {
+        "offset": 24,
+        "bytes": 486866
+      },
+      "json_pointer": "/structs/TExerciseCategoryReq",
+      "field_names_or_enum": [
+        "iMainID"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/ab/ab716834-255d-4b7b-b84a-380cac29d011.bin",
+      "member_sha256": "5cd78d5ac30fd3188c9749d84288913757dea687f9ce30606d7458fa3b12e564",
+      "json_range": {
+        "offset": 24,
+        "bytes": 486866
+      },
+      "json_pointer": "/structs/TExerciseCategoryRsp",
+      "field_names_or_enum": [
+        "iResult",
+        "vtSimpleExerciseLearningCategory"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/ab/ab716834-255d-4b7b-b84a-380cac29d011.bin",
+      "member_sha256": "5cd78d5ac30fd3188c9749d84288913757dea687f9ce30606d7458fa3b12e564",
+      "json_range": {
+        "offset": 24,
+        "bytes": 486866
+      },
+      "json_pointer": "/structs/TCTAnalyseGameV2Req",
+      "field_names_or_enum": [
+        "vecType",
+        "lQipuID",
+        "mapStepAnalysisAttr",
+        "bIsRed",
+        "sSerializedCtrlData",
+        "bForceRenew"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/ab/ab716834-255d-4b7b-b84a-380cac29d011.bin",
+      "member_sha256": "5cd78d5ac30fd3188c9749d84288913757dea687f9ce30606d7458fa3b12e564",
+      "json_range": {
+        "offset": 24,
+        "bytes": 486866
+      },
+      "json_pointer": "/structs/TCTAnalyseGameV2Rsp",
+      "field_names_or_enum": [
+        "iResultID",
+        "vecType",
+        "lQipuID",
+        "stOverview",
+        "vecExercisesItem",
+        "stSituation",
+        "mapStepAnalysisAttr",
+        "bIsRed",
+        "sSerializedCtrlData"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/ab/ab716834-255d-4b7b-b84a-380cac29d011.bin",
+      "member_sha256": "5cd78d5ac30fd3188c9749d84288913757dea687f9ce30606d7458fa3b12e564",
+      "json_range": {
+        "offset": 24,
+        "bytes": 486866
+      },
+      "json_pointer": "/structs/TCTGetExercisesReq",
+      "field_names_or_enum": [
+        "vecOmittedKillingType",
+        "bShouldSkipCollectItem",
+        "iStartPos",
+        "iCheckGameNum"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/ab/ab716834-255d-4b7b-b84a-380cac29d011.bin",
+      "member_sha256": "5cd78d5ac30fd3188c9749d84288913757dea687f9ce30606d7458fa3b12e564",
+      "json_range": {
+        "offset": 24,
+        "bytes": 486866
+      },
+      "json_pointer": "/structs/TCTGetExercisesRsp",
+      "field_names_or_enum": [
+        "iResultID",
+        "vecExercisesItem",
+        "vecOmittedKillingType",
+        "bShouldSkipCollectItem",
+        "iStartPos",
+        "iNextPos"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/ab/ab716834-255d-4b7b-b84a-380cac29d011.bin",
+      "member_sha256": "5cd78d5ac30fd3188c9749d84288913757dea687f9ce30606d7458fa3b12e564",
+      "json_range": {
+        "offset": 24,
+        "bytes": 486866
+      },
+      "json_pointer": "/structs/TCTReportExercisesResultReq",
+      "field_names_or_enum": [
+        "sID",
+        "iStatus",
+        "iOmittedKillingType"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/ab/ab716834-255d-4b7b-b84a-380cac29d011.bin",
+      "member_sha256": "5cd78d5ac30fd3188c9749d84288913757dea687f9ce30606d7458fa3b12e564",
+      "json_range": {
+        "offset": 24,
+        "bytes": 486866
+      },
+      "json_pointer": "/structs/TCTReportExercisesResultRsp",
+      "field_names_or_enum": [
+        "iResultID"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/ab/ab716834-255d-4b7b-b84a-380cac29d011.bin",
+      "member_sha256": "5cd78d5ac30fd3188c9749d84288913757dea687f9ce30606d7458fa3b12e564",
+      "json_range": {
+        "offset": 24,
+        "bytes": 486866
+      },
+      "json_pointer": "/structs/TCTGetEndingGameDataRsp",
+      "field_names_or_enum": [
+        "iResultID",
+        "mapScoreLevelCount",
+        "iAverageScore",
+        "mapMistakeCount"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/68/6872f128-83e2-48fb-bc73-78dad613c68f.bin",
+      "member_sha256": "165bae63c30de270f7efadde0d6436f5a13389da0ad38cf92c3c4af63587373c",
+      "json_range": {
+        "offset": 24,
+        "bytes": 251118
+      },
+      "json_pointer": "/structs/TPVELevel",
+      "field_names_or_enum": [
+        "iID",
+        "sLvlName",
+        "sHeroName",
+        "sResName",
+        "iAILevel",
+        "iBeginType",
+        "iUndoTimes",
+        "iPiecesID",
+        "sLvlInfo",
+        "iPhysicalVal",
+        "sSynopsis",
+        "sDetails",
+        "sPrompt",
+        "iPromptTimeOut",
+        "iAwardId",
+        "sAwardPic",
+        "iChapterAwardId"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/68/6872f128-83e2-48fb-bc73-78dad613c68f.bin",
+      "member_sha256": "165bae63c30de270f7efadde0d6436f5a13389da0ad38cf92c3c4af63587373c",
+      "json_range": {
+        "offset": 24,
+        "bytes": 251118
+      },
+      "json_pointer": "/structs/TPVEChapter",
+      "field_names_or_enum": [
+        "iID",
+        "sLvlName",
+        "iMapType",
+        "iLevelSum",
+        "iStLevel",
+        "iEdLevel"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/68/6872f128-83e2-48fb-bc73-78dad613c68f.bin",
+      "member_sha256": "165bae63c30de270f7efadde0d6436f5a13389da0ad38cf92c3c4af63587373c",
+      "json_range": {
+        "offset": 24,
+        "bytes": 251118
+      },
+      "json_pointer": "/structs/TPVEConfig",
+      "field_names_or_enum": [
+        "vecPVELevels",
+        "vecPVEChapters",
+        "mapPVEBattleLevel"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/68/6872f128-83e2-48fb-bc73-78dad613c68f.bin",
+      "member_sha256": "165bae63c30de270f7efadde0d6436f5a13389da0ad38cf92c3c4af63587373c",
+      "json_range": {
+        "offset": 24,
+        "bytes": 251118
+      },
+      "json_pointer": "/structs/TExerciseCategoryConf",
+      "field_names_or_enum": [
+        "iCategoryid",
+        "iMainCategory",
+        "sCategoryName",
+        "iOrder"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/68/6872f128-83e2-48fb-bc73-78dad613c68f.bin",
+      "member_sha256": "165bae63c30de270f7efadde0d6436f5a13389da0ad38cf92c3c4af63587373c",
+      "json_range": {
+        "offset": 24,
+        "bytes": 251118
+      },
+      "json_pointer": "/structs/TExerciseLevelConf",
+      "field_names_or_enum": [
+        "iLevelId",
+        "iMinScore",
+        "iMaxScore"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/68/6872f128-83e2-48fb-bc73-78dad613c68f.bin",
+      "member_sha256": "165bae63c30de270f7efadde0d6436f5a13389da0ad38cf92c3c4af63587373c",
+      "json_range": {
+        "offset": 24,
+        "bytes": 251118
+      },
+      "json_pointer": "/structs/TExerciseInitConf",
+      "field_names_or_enum": [
+        "iLimitRound",
+        "iMinScore",
+        "iMaxScore",
+        "iTargetTime",
+        "iReviveTime",
+        "iHitPoint",
+        "iTacticMinScore",
+        "iTacticMaxScore"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/68/6872f128-83e2-48fb-bc73-78dad613c68f.bin",
+      "member_sha256": "165bae63c30de270f7efadde0d6436f5a13389da0ad38cf92c3c4af63587373c",
+      "json_range": {
+        "offset": 24,
+        "bytes": 251118
+      },
+      "json_pointer": "/structs/TExerciseLibConf",
+      "field_names_or_enum": [
+        "mExerciseLibConf",
+        "mExerciseLevelConf",
+        "mExerciseInitConf",
+        "mExerciseReviveConf",
+        "mExerciseChallengeConf",
+        "mTAnswerGameExerciseConf"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/68/6872f128-83e2-48fb-bc73-78dad613c68f.bin",
+      "member_sha256": "165bae63c30de270f7efadde0d6436f5a13389da0ad38cf92c3c4af63587373c",
+      "json_range": {
+        "offset": 24,
+        "bytes": 251118
+      },
+      "json_pointer": "/structs/TChallengeExercise",
+      "field_names_or_enum": [
+        "iRound",
+        "iMinScore",
+        "iMaxScore",
+        "iSettlementType"
+      ]
+    },
+    {
+      "member": "assets/assets/jce-schemas-qqchess/native/68/6872f128-83e2-48fb-bc73-78dad613c68f.bin",
+      "member_sha256": "165bae63c30de270f7efadde0d6436f5a13389da0ad38cf92c3c4af63587373c",
+      "json_range": {
+        "offset": 24,
+        "bytes": 251118
+      },
+      "json_pointer": "/structs/TExerciseChallengeConf",
+      "field_names_or_enum": [
+        "iChallengeType",
+        "iFailNum",
+        "vTChallengeExercise"
+      ]
+    }
+  ],
+  "boundary": "Static resource/schema evidence; no authenticated runtime scores observed; exact Tencent formulas unknown."
+}

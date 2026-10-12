@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>象棋教练</title><style>/* BOARD_CSS */</style></head>
+<body>
+<main class="coach">
+  <header><div class="brand"><span class="seal" aria-hidden="true">棋</span><div><h1>象棋教练</h1><p>下一步，也懂为什么</p></div></div><div class="header-actions"><button id="expand" hidden>展开棋盘</button><button id="training-open" aria-controls="training-panel" aria-expanded="false">残局训练</button><button id="free">自由摆谱</button><button id="new" class="primary">新开一局</button></div></header>
+  <p id="notice" class="notice" role="status" aria-live="polite">正在连接棋盘…</p>
+  <div class="layout">
+    <section class="play-area" aria-label="象棋棋盘">
+      <div class="turnbar"><span id="turn">准备开始</span><span id="saved" class="subtle"></span></div>
+      <section id="setup-controls" class="setup-panel" aria-label="摆设局面" hidden>
+        <div class="section-title"><strong>摆设局面</strong><label for="setup-turn">轮到 <select id="setup-turn"><option value="r">红方走</option><option value="b">黑方走</option></select></label></div>
+        <p class="footnote">选棋子，再点棋盘放置；选“移动”可任意挪子。摆好后检查规则并保存。</p>
+        <div id="setup-palette" class="setup-palette" aria-label="选择要放置的棋子"></div>
+        <div class="setup-tools"><button id="setup-move" aria-pressed="true">移动</button><button id="setup-erase" aria-pressed="false">删除</button><button id="setup-undo">撤销摆放</button><button id="setup-clear">清空</button><button id="setup-standard">标准开局</button><button id="setup-current">当前局面</button></div>
+      </section>
+      <div class="skin-bar"><span class="skin-name"><span aria-hidden="true">✦</span> 玄曜 · 星河</span><button id="effects-toggle" aria-pressed="true" aria-label="切换棋盘特效">特效 · 极炫</button></div>
+      <div class="board-wrap"><svg id="grid" viewBox="0 0 450 500" aria-hidden="true"></svg><div id="squares" class="squares" role="group" aria-label="选择棋子，再选择落点"></div></div>
+      <div id="setup-actions" class="toolbar" hidden><button id="setup-analyze" class="primary">摆好了，分析讲解</button><button id="setup-save">保存并继续录谱</button><button id="setup-cancel">取消摆设</button></div>
+      <div id="record-controls" class="record-controls" hidden><p class="footnote">自由录谱 · 红黑双方都由你走，每一步自动保存。</p><button id="record-review" class="primary">摆完了，复盘讲解</button><button id="position-explain">分析当前局面</button></div>
+      <div id="preview-controls" class="preview-controls" hidden><button id="prev">上一步</button><span id="preview-step"></span><button id="next">下一步</button><button id="live" class="text-button">回到实战</button></div>
+      <div class="toolbar"><button id="reply" class="primary" hidden>继续应手</button><button id="undo" disabled>悔棋</button><button id="flip">翻转棋盘</button><button id="refresh" disabled>刷新</button><button id="export" disabled>导出棋谱</button></div>
+      <div id="sandbox-controls" class="preview-controls" hidden><span id="sandbox-step"></span><button id="sandbox-undo">分析悔一步</button><button id="sandbox-reset">回到分析起点</button><button id="sandbox-exit" class="text-button">结束试走</button></div>
+      <button id="return-original" class="text-button" hidden>回原局复盘</button>
+
+    </section>
+    <aside>
+      <section id="training-panel" class="lesson training-panel" aria-labelledby="training-heading" hidden>
+        <div class="section-title"><div><span class="eyebrow">练习 · 评测 · 挑战</span><h2 id="training-heading">残局训练</h2></div><button id="training-close" class="text-button">回到棋局</button></div>
+        <div class="training-summary" aria-label="本地训练记录"><div><strong id="training-rating">—</strong><span>本地训练分</span></div><div><strong id="training-completed">—</strong><span>已解出 / 全部</span></div><div><strong id="training-streak">—</strong><span>最佳连对</span></div></div>
+        <section id="training-current" hidden>
+          <div class="training-attempt-heading"><span id="training-mode-label" class="training-tag"></span><span id="training-attempt-status"></span></div>
+          <h3 id="training-title" class="training-puzzle-title"></h3><p id="training-puzzle-meta" class="footnote"></p><p id="training-goal" class="training-goal"></p>
+          <div id="training-challenge" class="training-challenge" hidden><div><span id="training-clock-caption">剩余时间</span><strong id="training-time" role="timer" aria-label="挑战剩余时间">03:00</strong></div><p id="training-challenge-stats"></p></div>
+          <p id="training-feedback" class="training-feedback" role="status" aria-live="polite"></p><p id="training-attempt-stats" class="footnote"></p><div id="training-stars" class="training-stars" hidden></div><p id="training-rating-change" class="footnote" hidden></p>
+          <div class="training-actions"><button id="training-hint">给点提示</button><button id="training-answer">查看答案</button><button id="training-retry">重试本题</button><button id="training-next" class="primary">下一题</button></div>
+          <section id="training-solution" class="training-solution" aria-label="本题答案" hidden><h3>解题思路</h3><p id="training-solution-copy"></p><ol id="training-line"></ol><button id="training-preview" class="full quiet">在棋盘逐步演示</button></section>
+          <p id="training-source" class="footnote"></p>
+        </section>
+        <button id="training-browse" class="text-button" aria-controls="training-library" aria-expanded="false" hidden>选题 / 切换模式</button>
+        <section id="training-library" aria-label="残局题库">
+          <div class="training-modes" role="group" aria-label="训练方式"><button id="training-mode-learn" aria-pressed="true">学习</button><button id="training-mode-rated" aria-pressed="false">评测</button><button id="training-mode-challenge" aria-pressed="false">挑战</button></div>
+          <p id="training-mode-copy" class="footnote"></p>
+          <label id="training-duration-label" class="training-duration" for="training-duration" hidden>挑战时长<select id="training-duration"><option value="180">3 分钟</option><option value="300">5 分钟</option><option value="0">不限时</option></select></label>
+          <button id="training-challenge-start" class="primary full" hidden>开始 3 分钟挑战</button>
+          <div class="training-filters"><label for="training-theme">主题<select id="training-theme"><option value="">全部主题</option></select></label><label for="training-difficulty">难度<select id="training-difficulty"><option value="">全部难度</option></select></label><label for="training-source-filter">来源<select id="training-source-filter"><option value="">全部来源</option><option value="original">本地原创</option><option value="ccpd">CCPD 实战</option></select></label></div>
+          <label class="training-mistakes"><input id="training-mistakes" type="checkbox">只看错题</label>
+          <div class="section-title"><p id="training-library-status" class="footnote" role="status"></p><button id="training-load" class="text-button" hidden>重试</button></div>
+          <div id="training-cards" class="training-cards"></div>
+          <div id="training-pagination" class="training-pagination" hidden><button id="training-page-prev" class="text-button">上一页</button><span id="training-page-info" class="footnote" role="status"></span><button id="training-page-next" class="text-button">下一页</button></div>
+        </section>
+        <details class="training-method"><summary>训练与计分说明</summary><p id="training-method-judging" class="footnote">目标手数只计算你自己的落子。完成目标后会展示已核验的解法。</p><p id="training-method-stars" class="footnote">独立无错完成3星，有错但未用提示完成2星，使用提示后完成1星。</p><p id="training-method-rating" class="footnote">题目难度是本地编排参考值；训练分记录本题库内的练习表现，不代表平台段位。</p><p id="training-method-challenge" class="footnote">训练记录自动保存，原对局可随时从“继续之前的棋局”恢复。</p><p id="training-method-source" class="footnote"></p></details>
+      </section>
+      <section id="score-panel" class="score-panel" aria-label="双方局势评分">
+        <div class="section-title"><h3>局势曲线</h3><button id="score-live" class="text-button" hidden>回到当前分数</button></div>
+        <div class="score-summary"><span class="red-score">红方 <strong id="red-score">—</strong></span><span class="black-score">黑方 <strong id="black-score">—</strong></span><span id="score-at" class="subtle">等待开局</span></div>
+        <svg id="score-chart" role="group" aria-label="局势曲线，零线上方红方占优，下方黑方占优"></svg>
+        <label class="sr-only" for="score-scrubber">拖动查看每一步的局势和棋盘</label><input id="score-scrubber" type="range" min="0" max="0" value="0" aria-label="拖动查看每一步的局势和棋盘">
+        <div class="score-note"><span id="score-status" class="subtle" role="status"></span><button id="score-retry" class="text-button" hidden>重试评分</button></div>
+        <p id="score-verdict" class="footnote">正分红优，负分黑优；50分内按小波动看待。</p>
+        <details class="score-help"><summary>评分尺度</summary><p class="footnote">子力等值参考：车约1000，马／炮约500，过河兵约200，兵约100。它表示整体局势，不表示已经多出这些棋子；将杀单独显示。</p></details>
+      </section>
+      <div id="insight-tabs" class="insight-tabs" role="tablist" aria-label="讲解与复盘"><button id="lesson-tab" role="tab" aria-selected="true" aria-controls="lesson-panel">棋盘讲解</button><button id="review-tab" role="tab" aria-selected="false" aria-controls="review-panel">战后复盘</button></div>
+      <section id="lesson-panel" class="lesson" role="tabpanel"><span class="eyebrow">棋盘内讲解</span><h2 id="lesson-title">先走一步试试</h2><p id="lesson-copy">你的棋先落定，教练随后应手。想听原因时，再点“讲解”。</p><button id="explain" class="primary full" disabled>讲解这一回合</button><button id="hint" class="full quiet" disabled>先给我一点提示</button><p id="lesson-status" class="footnote" role="status" aria-live="polite"></p>
+        <div class="lesson-heading"><strong id="answer-heading">教练讲解</strong><button id="lesson-board" class="text-button" hidden>对照这一回合</button></div>
+        <article id="lesson-answer" class="lesson-answer" aria-label="教练讲解正文" aria-live="polite">点“讲解”后，答案会显示在这里。可以边看棋盘边读，也可以继续走棋。</article>
+        <button id="lesson-check" class="text-button" hidden>查看讲解进度</button><button id="lesson-retry" class="text-button" hidden>重新请求讲解</button>
+        <details id="variations" hidden><summary>把变化摆出来</summary><label class="sr-only" for="variation">选择要演示的变例</label><select id="variation"></select><button id="demonstrate" class="full quiet">演示这条变化</button><p class="footnote">可以逐步看后果，实战棋局会保留。</p></details>
+      </section>
+      <section id="review-panel" class="lesson" role="tabpanel" hidden>
+        <div class="section-title"><h2>战后复盘</h2><button id="review-start" class="text-button">开始复盘</button></div>
+        <p id="review-caption" class="footnote">对局结束后自动分析；也可提前复盘已走的棋谱。</p>
+        <p id="review-status" class="footnote" role="status"></p><progress id="review-progress" hidden></progress>
+        <div id="review-details" hidden>
+          <div id="review-summary" class="review-summary"></div>
+          <div class="review-phase"><span>阶段表现</span><span>红方</span><span>黑方</span></div><div id="review-phases"></div>
+          <details class="review-section" open><summary>值得回看的转折点</summary><div id="review-turns"></div></details>
+          <details class="review-section"><summary>逐手评分</summary><div id="review-moves" class="review-moves"></div></details>
+          <div id="review-selection" hidden><p id="review-selection-text"></p><div class="review-actions"><button id="review-played">看实走变化</button><button id="review-best">看推荐变化</button><button id="review-retry">重试这一步</button><button id="review-sandbox">自由试走</button><button id="review-explain" class="text-button">讲解这一着</button></div></div>
+          <button id="review-summary-lesson" class="primary full">请教练总结这一局</button>
+          <details class="score-help"><summary>评分口径</summary><p class="footnote" id="review-method-source"></p><p class="footnote" id="review-method-formula"></p><p class="footnote" id="review-method-grades"></p><p class="footnote" id="review-method-stages"></p><p class="footnote" id="review-method-mistakes"></p><p class="footnote" id="review-method-openingBook"></p></details>
+        </div>
+      </section>
+      <details class="record"><summary class="section-title"><span>这一局的棋谱</span><span id="move-count" class="subtle">0 手</span></summary><ol id="history" class="history"></ol><p id="empty-record" class="subtle">每一步都会自动保存</p></details>
+      <button id="recent" class="text-button">继续之前的棋局</button><div id="games" hidden></div>
+    </aside>
+  </div>
+  <dialog id="new-dialog"><h2>开始一盘新棋</h2><label for="game-mode">选择方式</label><select id="game-mode"><option value="play">人机对弈</option><option value="record">自由录谱 · 自己走红黑双方</option><option value="setup">摆设局面 · 任意放置棋子</option></select><p id="mode-description" class="footnote">与你的象棋教练对弈，想听原因时再点讲解。</p><div id="play-options"><label for="side">我执</label><select id="side"><option value="r">红方 · 先走</option><option value="b">黑方 · 后走</option></select><label class="checkbox"><input id="automatic" type="checkbox" checked> 教练自动应手</label></div><div class="dialog-actions"><button id="cancel">取消</button><button id="start" class="primary">开始</button></div></dialog>
+</main>
+<script>/* BOARD_JS */</script>
+</body></html>

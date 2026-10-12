@@ -1,0 +1,26 @@
+{
+  "verifiedAt": "2026-10-12T06:54:13.215Z",
+  "release": "0.1.0",
+  "checks": {
+    "standaloneExtractedArchive": true,
+    "originalProjectNotRequired": true,
+    "tools": 21,
+    "catalog": 93,
+    "resource": "ui://xiangqi-coach/board-analysis-tt4462-v1.html",
+    "realEngine": "Pikafish dev-20260213-391d491a",
+    "completedReviewPlies": 2,
+    "restartPersistence": true
+  },
+  "buildInfo": {
+    "platform": "darwin",
+    "architecture": "arm64",
+    "node": "v26.8.1",
+    "hashes": {
+      "xiangqi-rules": "099e2252117bc714d538060faee7529ab9378230b197fe299c8d1fbfaac22e6e",
+      "pikafish": "79ed74e46bd2277c3f0cbbe63b3faea70ee85a6f9736f0141ec0185801325b1b",
+      "pikafish.nnue": "e6ec544cc330b83346cd47091fa027225ff963d04017d8cd88fc0c82f7c267e4",
+      "board.html": "a92dd4b01d1960e749781bc85e9a9f1289670968007c593e82ad99f4a3702233"
+    }
+  },
+  "dataBoundary": "Fresh temporary database only; no user games or authentication files were used."
+}
